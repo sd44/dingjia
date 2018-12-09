@@ -1,0 +1,77 @@
+\documentclass{dingjia}
+
+\title{个人社会学视角下的 \\[0.3\baselineskip] 世界与中国（待续）}
+\subtitle{一个平民的独白}
+\author{孙滨}
+\authornick{蛋疼的蛋蛋}
+\authorurl{http://sd44.gitee.io}
+\authormail{sd44sd44@yeah.net}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\input{data/dedication}
+\input{data/preface}
+
+\tableofcontents
+%% 目录
+
+%% 符号对照表
+% \input{data/denotation}
+
+%%% 正文部分
+\mainmatter
+
+\part{空间生产}
+
+\pagestyle{empty}
+\input{data/dingjiaphoto}
+\pagestyle{fancy}
+\input{data/chengzhongcun}
+
+
+\part{人文}
+\input{data/houxiandai}
+\input{data/shengming}
+\input{data/gongzuori}
+
+\part{国家}
+\input{data/assange}
+\input{data/guojiaxingzhi}
+% \input{data/china}
+
+\part{关于中国（未完成）}
+\input{data/aboutchina}
+\input{data/historychina}
+
+%%% 其它部分
+% 插图索引
+% \listoffigures
+% 表格索引
+% \listoftables
+% 公式索引
+% \listofequations
+
+%% 参考文献
+\clearpage
+\appendix
+\phantomsection
+\addcontentsline{toc}{part}{\appendixname}
+
+\input{data/gerenshehui}
+\input{data/nicai}
+\input{data/neoliber}
+
+\backmatter
+\printbibliography[heading=bibispart, title=参考文献]
+
+\clearpage
+\phantomsection
+\todototoc
+\listoftodos
+
+\end{document}
+
