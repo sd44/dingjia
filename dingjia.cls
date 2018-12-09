@@ -21,35 +21,9 @@
   }%
 }
 
-\ifding@lwarp
-  \LoadClass[oneside]{book}
-  \RequirePackage{xeCJK}
-  % --- LWARP IS LOADED NEXT ---
-  \RequirePackage[
-  HomeHTMLFilename=index,     % Filename of the homepage.
-  % HTMLFilename={node-},       % Filename prefix of other pages.
-  % IndexLanguage=english,      % Language for xindy index, glossary.
-  latexmk,                    % Use latexmk to compile.
-  % OSWindows,                  % Force Windows. (Usually automatic.)
-  % mathjax,                    % Use MathJax to display math.
-  ]{lwarp}
-  \boolfalse{FileSectionNames}  % If false, numbers the files.
+\LoadClass[UTF8, fontset = sourcesans, a4paper, oneside, zihao =
+-4, scheme=chinese, heading = true]{ctexbook}
 
-  \setCJKmainfont[ItalicFont=FZNewKai-Z03S]{Source Han Serif CN}
-  \setCJKsansfont[ItalicFont=FZNewKai-Z03S, BoldFont=Source Han Sans CN Medium]{Source Han Sans CN Normal}
-  \setCJKmonofont{FZFangSong-Z02S}
-  \setCJKfamilyfont{zhsong}{Source Han Serif CN}
-  \setCJKfamilyfont{zhhei}[BoldFont=Source Han Sans CN Medium]{Source Han Sans CN Normal}
-  \setCJKfamilyfont{zhfs}{FZFangSong-Z02S}
-  \setCJKfamilyfont{zhkai}[BoldFont=FZCuKaiS-R-GB]{FZNewKai-Z03S}
-  \NewDocumentCommand\songti{}{\CJKfamily{zhsong}}
-  \NewDocumentCommand\heiti{}{\CJKfamily{zhhei}}
-  \NewDocumentCommand\fangsong{}{\CJKfamily{zhfs}}
-  \NewDocumentCommand\kaishu{}{\CJKfamily{zhkai}}
-\else
-  \LoadClass[UTF8, fontset = sourcesans, a4paper, oneside, zihao =
--4, scheme=chinese]{ctexbook}
-  
 \ctexset{%
   abstractname = {摘\quad 要},  % book类没有摘要
   today = {small},
@@ -64,14 +38,26 @@
 	subsubsection =
   {beforeskip = {3ex plus 1ex minus 0.2ex}, afterskip = {1.5ex plus 0.2ex}}
 }
+
+\ifding@lwarp
+% --- LWARP IS LOADED NEXT ---
+\RequirePackage[
+HomeHTMLFilename=index,     % Filename of the homepage.
+% HTMLFilename={node-},       % Filename prefix of other pages.
+% IndexLanguage=english,      % Language for xindy index, glossary.
+latexmk,                    % Use latexmk to compile.
+% OSWindows,                  % Force Windows. (Usually automatic.)
+% mathjax,                    % Use MathJax to display math.
+]{lwarp}
+\boolfalse{FileSectionNames}  % If false, numbers the files.
 \fi
 
 \RequirePackage{iftex}
 \ifXeTeX
-  % LuaLaTeX 没有以下设置，只有XeTeX有。
-  \XeTeXgenerateactualtext=1
-  \xeCJKsetup{CJKmath=true}
-  \xeCJKsetup{xCJKecglue=true}
+% LuaLaTeX 没有以下设置，只有XeTeX有。
+\XeTeXgenerateactualtext=1
+\xeCJKsetup{CJKmath=true}
+\xeCJKsetup{xCJKecglue=true}
 \fi
 % \global\hyphenpenalty=5000
 % \global\tolerance=1000
@@ -91,13 +77,19 @@
 footnoteleadingratio = 1.56]{zhlineskip}
 
 
+\ifding@lwarp
+\begin{warpHTML}
+  \makeatletter
+  \let\addtocontents\newfloat@addtocontents@ORI
+\end{warpHTML}
+\fi
 \RequirePackage[backend=biber,style=gb7714-2015,backref=true]{biblatex}
 \addbibresource[location=local]{ref/refs.bib}
 
 \defbibheading{bibispart}[\bibname]{%
-    \chapter*{#1}%
-    \addcontentsline{toc}{part}{#1}%
-    \markboth{#1}{#1}}
+  \chapter*{#1}%
+  \addcontentsline{toc}{part}{#1}%
+  \markboth{#1}{#1}}
 
 \renewcommand{\bibfont}{\small}
 \renewcommand{\bibauthorfont}{\bfseries\color{teal}}%
@@ -115,7 +107,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \RequirePackage{caption}
 \captionsetup{font=small, labelfont=bf}
 \newcommand{\capsource}[1]{\vspace{-8pt} \caption*{\mdseries 图表来源: {#1}} } % 自定义图表来源
-                                % 命令，vspace可酌情调整。
+% 命令，vspace可酌情调整。
 
 \RequirePackage{etoolbox}
 % % 脚注按页编号
@@ -125,11 +117,11 @@ footnoteleadingratio = 1.56]{zhlineskip}
 
 \RequirePackage[perpage, hang, symbol*]{footmisc}
 \DefineFNsymbols{cqufnsymbol}{
-    {\ding[1.3]{172}}    {\ding[1.3]{173}}
-    {\ding[1.3]{174}}    {\ding[1.3]{175}}
-    {\ding[1.3]{176}}    {\ding[1.3]{177}}
-    {\ding[1.3]{178}}    {\ding[1.3]{179}}
-    {\ding[1.3]{180}}    {\ding[1.3]{181}}
+  {\ding[1.3]{172}}    {\ding[1.3]{173}}
+  {\ding[1.3]{174}}    {\ding[1.3]{175}}
+  {\ding[1.3]{176}}    {\ding[1.3]{177}}
+  {\ding[1.3]{178}}    {\ding[1.3]{179}}
+  {\ding[1.3]{180}}    {\ding[1.3]{181}}
 }
 % 定义footnote的表示方法为cqufnsymbol
 \setfnsymbol{cqufnsymbol}
@@ -271,9 +263,9 @@ footnoteleadingratio = 1.56]{zhlineskip}
 % 目录 \hspace*{\fill}}   % 不使用tocloft宏包时也适用的命令。
 
 % 设置目录中各级缩进
-%\setlength{\cftsecindent}{2.5em}
+% \setlength{\cftsecindent}{2.5em}
 \setlength{\cftsubsecindent}{4em}
-%
+% 
 % 设置目录中 chapter 章节编号的宽度 (ctex 章节编号为中文, 需要特别注意).
 % 参考 <<LaTeX 入门>>, 刘海洋 编著, 电子工业出版社, 2013.6
 % \settowidth\cftchapnumwidth{第十章} % 最宽的可能编号
@@ -303,16 +295,16 @@ footnoteleadingratio = 1.56]{zhlineskip}
 % \newcommand{\Rnum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 \RequirePackage{enumitem}
-    % \topsep 列表顶部与之前内容的额外空白，不含 \baselineskip
-    % \partopsep 如果列表之前是一个空行，列表顶部的额外空白
-    % \itemsep  列表各项之间额外的垂直空白
-    % \parsep 一个 item 中，如果分段，段落间额外空白
-    % \leftmargin 列表与左边距之间的水平距离，值为非负
-    % \rightmargin 列表与右边距之间的水平距离，值为非负
-    % \itemindent 每一 item 第一行的缩进
-    % \listparindent 每一 item 第一行之后各行的缩进
-    % \labelsep 标签盒子与每一 item 第一行文本之间距离
-    % \labelwidth 标签盒子的宽度；如果标签过长，这一宽度会自动变大，直到列表的第一行文本为止
+% \topsep 列表顶部与之前内容的额外空白，不含 \baselineskip
+% \partopsep 如果列表之前是一个空行，列表顶部的额外空白
+% \itemsep  列表各项之间额外的垂直空白
+% \parsep 一个 item 中，如果分段，段落间额外空白
+% \leftmargin 列表与左边距之间的水平距离，值为非负
+% \rightmargin 列表与右边距之间的水平距离，值为非负
+% \itemindent 每一 item 第一行的缩进
+% \listparindent 每一 item 第一行之后各行的缩进
+% \labelsep 标签盒子与每一 item 第一行文本之间距离
+% \labelwidth 标签盒子的宽度；如果标签过长，这一宽度会自动变大，直到列表的第一行文本为止
 \setlist{leftmargin= \parindent, itemindent = \parindent, listparindent =
   \parindent, %labelindent = \parindent,
   parsep = 0ex, partopsep = 0ex, itemsep = 0.5em }
@@ -342,8 +334,8 @@ footnoteleadingratio = 1.56]{zhlineskip}
     \includegraphics[width=0.9\textwidth]{dingjia/#4}
     \caption{#5}\label{fig:#4}
     \raggedright \small #6
-\end{figure}
-\clearpage
+  \end{figure}
+  \clearpage
 }
 
 % 同上，注意图片宽高比接近于2:3
@@ -354,8 +346,8 @@ footnoteleadingratio = 1.56]{zhlineskip}
     \caption{#2}\label{fig:#1}
     \raggedright \small #3
     \vfill 
-\end{figure}
-\clearpage
+  \end{figure}
+  \clearpage
 }
 
 
@@ -395,33 +387,33 @@ footnoteleadingratio = 1.56]{zhlineskip}
   \clearpage
 }
 
-%\setcounter{secnumdepth}{-2} % Warning: 因为是草稿阶段，为方便观看暂时性不显示章节编号，以后成品时会去掉这行。
+% \setcounter{secnumdepth}{-2} % Warning: 因为是草稿阶段，为方便观看暂时性不显示章节编号，以后成品时会去掉这行。
 \RequirePackage{adjustbox}
 
 \ifding@lwarp
-    % --- LATEX AND HTML CUSTOMIZATION ---
-    \setcounter{tocdepth}{2}        % Include subsections in the \TOC.
-    \setcounter{secnumdepth}{2}     % Number down to subsections.
-    \setcounter{FileDepth}{1}       % Split \HTML\ files at sections
-    % \setcounter{FileDepth}{-5}       % one html page
-    \booltrue{CombineHigherDepths}  % Combine parts/chapters/sections
-    \setcounter{SideTOCDepth}{1}    % Include subsections in the side\TOC
-    % \setcounter{SideTOCDepth}{-6} % 让sidetoc不可见。
+% --- LATEX AND HTML CUSTOMIZATION ---
+\setcounter{tocdepth}{2}        % Include subsections in the \TOC.
+\setcounter{secnumdepth}{2}     % Number down to subsections.
+\setcounter{FileDepth}{1}       % Split \HTML\ files at sections
+% \setcounter{FileDepth}{-5}       % one html page
+\booltrue{CombineHigherDepths}  % Combine parts/chapters/sections
+\setcounter{SideTOCDepth}{1}    % Include subsections in the side\TOC
+% \setcounter{SideTOCDepth}{-6} % 让sidetoc不可见。
 
-    \HTMLTitle{个人社会学视角下的世界与中国——一个平民的独白}       % Overrides \title for the web page.
-    \HTMLAuthor{孙滨（蛋疼的蛋蛋）}        % Sets the HTML meta author tag.
-    \HTMLLanguage{UTF-8}            % Sets the HTML meta language.
-    \HTMLDescription{A description.}% Sets the HTML meta description.
-    % \HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
-    % \HTMLPageTop{\LinkHome}
-    % \HTMLPageBottom{欢迎转载，转载请注明本链接地址，最好再通知我一下。}
+\HTMLTitle{个人社会学视角下的世界与中国——一个平民的独白}       % Overrides \title for the web page.
+\HTMLAuthor{孙滨（蛋疼的蛋蛋）}        % Sets the HTML meta author tag.
+\HTMLLanguage{UTF-8}            % Sets the HTML meta language.
+\HTMLDescription{A description.}% Sets the HTML meta description.
+% \HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
+% \HTMLPageTop{\LinkHome}
+% \HTMLPageBottom{欢迎转载，转载请注明本链接地址，最好再通知我一下。}
 
-    \HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
-    % \HTMLPageTop{回到\LinkHome}
-    \HTMLPageBottom{回到\LinkHome \qquad%
-    \href{mailto:sd44sd44@yeah.net}{sd44sd44@yeah.net} \qquad%
-    \url{http://sd44.gitee.io}\\ 欢迎转载，转载请注明本链接地址，最好再通知我一下，%
-    让我高兴高兴，哈哈。}      
+\HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
+% \HTMLPageTop{回到\LinkHome}
+\HTMLPageBottom{回到\LinkHome \qquad%
+  \href{mailto:sd44sd44@yeah.net}{sd44sd44@yeah.net} \qquad%
+  \url{http://sd44.gitee.io}\\ 欢迎转载，转载请注明本链接地址，最好再通知我一下，%
+  让我高兴高兴，哈哈。}      
 
-    \CSSFilename{lwarp_sagebrush.css}
+\CSSFilename{lwarp_sagebrush.css}
 \fi
