@@ -29,13 +29,13 @@
   today = {small},
   subsection/format += \centering,
   part/pagestyle = empty,
-	chapter = {
-		pagestyle = empty, beforeskip = {-30pt}, afterskip = {20pt plus 5pt}},
+  chapter = {
+    pagestyle = empty, beforeskip = {-30pt}, afterskip = {20pt plus 5pt}},
   section =
   {beforeskip = {3ex plus 1ex minus 0.2ex}, afterskip = {2.3ex plus 0.2ex}},
-	subsection =
+  subsection =
   {beforeskip = {3ex plus 1ex minus 0.2ex}, afterskip = {1.5ex plus 0.2ex}},
-	subsubsection =
+  subsubsection =
   {beforeskip = {3ex plus 1ex minus 0.2ex}, afterskip = {1.5ex plus 0.2ex}}
 }
 
@@ -252,6 +252,8 @@ footnoteleadingratio = 1.56]{zhlineskip}
 % for format of contents
 \RequirePackage{tocloft}
 \RequirePackage{tocbibind}
+\renewcommand\cftdot{…}
+\renewcommand{\cftdotsep}{0}
 % \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % ctexart的目录中，section也加点。
 % \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % ctexbook中，chapter也加点。
 
@@ -389,6 +391,42 @@ footnoteleadingratio = 1.56]{zhlineskip}
 
 % \setcounter{secnumdepth}{-2} % Warning: 因为是草稿阶段，为方便观看暂时性不显示章节编号，以后成品时会去掉这行。
 \RequirePackage{adjustbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 以下设置来源于胡海星的xelatex-zh-book项目
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 默认情况下,LaTeX 要求每页的文字至少占据 20%,否则该页就只单独放置一个浮动环境。而这通常不是我们想要的。我们将这个要求降低到 5%。
+\renewcommand*{\textfraction}{0.05}
+
+% 有时如果多个浮动环境连续放在一起, LaTeX 会将它们分在几个不同页,即使它们可在同一
+% 页放得下。我们可以通过修改\topfraction 和\bottomfraction分别设置顶端和底端的浮
+% 动环境的最大比例。
+\renewcommand*{\topfraction}{0.9}
+\renewcommand*{\bottomfraction}{0.8}
+
+% 有时 LaTeX 会把一个浮动环境单独放在一页,我们要求这个环境至少要占据 85% 才能单独放在一页。
+% 注意: \floatpagefraction 的数值必须小于\topfraction。
+\renewcommand*{\floatpagefraction}{0.80}
+
+% 根据学位书籍格式要求,表格的标题必须位于表格上方,插图的标题必须位于插图下方。
+\captionsetup[table]{position=above}
+\captionsetup[figure]{position=below}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+% 用于产生没有编号但在目次中列出的章。
+\newcommand\nchapter[1]{%
+ \if@mainmatter%
+   \@mainmatterfalse%
+   \chapter{#1}%
+   \@mainmattertrue%
+ \else
+   \chapter{#1}%
+ \fi
+}
+
+
 
 \ifding@lwarp
 % --- LATEX AND HTML CUSTOMIZATION ---
