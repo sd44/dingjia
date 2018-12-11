@@ -16,7 +16,8 @@
     Unknown option `\CurrentOption'%
   }{%
     Available package options are:\MessageBreak
-    % \space\space`answer,\MessageBreak
+    \space\space`oneside,\MessageBreak
+    \space\space`twoside,\MessageBreak
     \space\space`lwarp%
   }%
 }
@@ -105,7 +106,8 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \graphicspath{{figures/}}
 
 \RequirePackage{caption}
-\captionsetup{font=small, labelfont=bf}
+\DeclareCaptionLabelSeparator{zhspace}{\hspace{\ccwd}}
+\captionsetup{font=small, labelfont=bf, labelsep = zhspace, format = hang}
 \newcommand{\capsource}[1]{\vspace{-8pt} \caption*{\mdseries 图表来源: {#1}} } % 自定义图表来源
 % 命令，vspace可酌情调整。
 
