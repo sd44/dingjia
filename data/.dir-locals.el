@@ -1,5 +1,5 @@
 ;;; Directory Local Variables
 ;;; For more information see (info "(emacs) Directory Variables")
 
-((latex-mode
+((LaTeX-mode
   (TeX-master . "../main")))
