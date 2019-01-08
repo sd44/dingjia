@@ -1,0 +1,342 @@
+;; RefTeX parse info file
+;; File: /home/sd44/xueshu/dingjia/main.tex
+;; User: sd44 (sd44)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi t)
+
+(bibview-cache ("yangshuanggui" . "杨继绳 2009, 价格改革, 炎黄春秋 18") ("gaigelicheng" . "赵紫阳 2009, 改革历程") ("zhufuqiang" . "朱富强 2011, 帕累托改进原则能否应用于社会改革？, 学术月刊 82") ("bogaidaizhaizhuangu" . "董志凯 2016, 由“拨改贷”到“债转股”, 中国经济史研究 5") ("fengyunshi1b" . "张曙光 2017, 中国经济学风云史") ("fengyunshi1a" . "张曙光 2016, 中国经济学风云史") ("guojilaogongshijian" . "丁赛尔 国际劳工实践标准将对我国企业构成潜在威胁") ("linyifuzhai" . "林毅夫 “债转股”与国有企业改革") ("boyibo" . "薄一波 2008, 若干重大决策与事件的回顾（上下）") ("lumaisg" . "卢迈 1997, 实行“保量保价”的双轨制, 改革 54") ("taochangsheng" . "陶昌盛 2004, 中国粮食定价机制研究") ("zcstp" . "张成思 2009, 中国通货膨胀周期回顾与宏观政策启示, 亚太经济 66"))
+
+(master-dir . "/home/sd44/xueshu/dingjia/")
+
+(label-numbers)
+
+(bof "/home/sd44/xueshu/dingjia/main.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/dedication.tex")
+
+(eof "/home/sd44/xueshu/dingjia/data/dedication.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/preface.tex")
+
+(toc "toc" "  1 序言" "/home/sd44/xueshu/dingjia/data/preface.tex" nil 1 "1" "\\chapter{序言}" 1)
+
+("chap:preface" "s" "笔者起初只是想做丁家庄城中村摄影。随着摄影项目的开展和瓶颈，社会学（尤其是批判实践社会学）便进入了笔者的视野。在对社会学的学习和思考过程中，这个摄影项目逐步发展为这本免费开源的电子书。本书也可理解为笔" "/home/sd44/xueshu/dingjia/data/preface.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/preface.tex")
+
+(file-error "data/denotation")
+
+(toc "toc" "Part I 空间生产" "/home/sd44/xueshu/dingjia/main.tex" nil 0 "Part I" "\\part{空间生产}" 409)
+
+(bof "/home/sd44/xueshu/dingjia/data/dingjiaphoto.tex")
+
+(toc "toc" "  2 济南市丁家庄城中村照片集" "/home/sd44/xueshu/dingjia/data/dingjiaphoto.tex" nil 1 "2" "\\chapter{济南市丁家庄城中村照片集}" 1)
+
+("fig:cunbei" "f" "丁家庄村碑" "/home/sd44/xueshu/dingjia/data/dingjiaphoto.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/dingjiaphoto.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex")
+
+(toc "toc" "  3 城中村的简单概念" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 1 "3" "\\chapter{城中村的简单概念}" 1)
+
+("my-label" "t" "NO MATCH FOR CONTEXT REGEXP" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil)
+
+(toc "toc" "  4 济南市丁家庄城中村社会调查报告（未完成）" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 1 "4" "\\chapter{济南市丁家庄城中村社会调查报告（未完成）}" 1705)
+
+(toc "toc" "    4.1 背景介绍" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 2 "4.1" "\\section{背景介绍}" 1739)
+
+(toc "toc" "    4.2 丁家庄社会调查起因" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 2 "4.2" "\\section{丁家庄社会调查起因}" 2070)
+
+(toc "toc" "    4.3 失败的丁家庄城中村社会学调查" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 2 "4.3" "\\section{失败的丁家庄城中村社会学调查}" 2756)
+
+(toc "toc" "    4.4 丁家庄见闻散记" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 2 "4.4" "\\section{丁家庄见闻散记}" 4291)
+
+(toc "toc" "      4.4.1 丁家庄城中村的黑夜与清晨" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 3 "4.4.1" "\\subsection{丁家庄城中村的黑夜与清晨}" 4312)
+
+(toc "toc" "      4.4.2 医疗保健和社会保障" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 3 "4.4.2" "\\subsection{医疗保健和社会保障}" 4841)
+
+(toc "toc" "      4.4.3 他人即地狱" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 3 "4.4.3" "\\subsection{他人即地狱}" 5957)
+
+(toc "toc" "      4.4.4 何不食肉糜" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 3 "4.4.4" "\\subsection{何不食肉糜}" 6679)
+
+(toc "toc" "      4.4.5 过往的宅田基地之殇" "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex" nil 3 "4.4.5" "\\subsection{过往的宅田基地之殇}" 7636)
+
+(eof "/home/sd44/xueshu/dingjia/data/chengzhongcun.tex")
+
+(toc "toc" "Part II 人文" "/home/sd44/xueshu/dingjia/main.tex" nil 0 "Part II" "\\part{人文}" 513)
+
+(bof "/home/sd44/xueshu/dingjia/data/houxiandai.tex")
+
+(toc "toc" "  5 草稿之一——当代艺术——版本0.2" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 1 "5" "\\chapter{草稿之一——当代艺术——版本0.2}" 1)
+
+(toc "toc" "    5.1 当代艺术的概念" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 2 "5.1" "\\section{当代艺术的概念}" 30)
+
+(toc "toc" "    5.2 后现代理论起源和发展" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 2 "5.2" "\\section{后现代理论起源和发展}" 1959)
+
+(toc "toc" "    5.3 丹托的艺术终结论" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 2 "5.3" "\\section{丹托的艺术终结论}" 2838)
+
+(toc "toc" "      5.3.1 丹托艺术终结论概览" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 3 "5.3.1" "\\subsection{丹托艺术终结论概览}" 2858)
+
+(toc "toc" "      5.3.2 丹托艺术终结论批判" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 3 "5.3.2" "\\subsection{丹托艺术终结论批判}" 3961)
+
+(toc "toc" "    5.4 结合后现代理论对当代艺术的批判" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 2 "5.4" "\\section{结合后现代理论对当代艺术的批判}" 4707)
+
+(toc "toc" "    5.5 结语" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil 2 "5.5" "\\section{结语}" 7701)
+
+("fig-qiuqian" "f" "让·奥诺雷·弗拉戈纳尔：《秋千》" "/home/sd44/xueshu/dingjia/data/houxiandai.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/houxiandai.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/shengming.tex")
+
+(toc "toc" "  6 草稿之一——生命" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 1 "6" "\\chapter{草稿之一——生命}" 1)
+
+(toc "toc" "    6.1 关于无国界医生的一场争议" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 2 "6.1" "\\section{关于无国界医生的一场争议}" 237)
+
+(toc "toc" "    6.2 “科学”的优生学绝育论" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 2 "6.2" "\\section{“科学”的优生学绝育论}" 1912)
+
+(toc "toc" "    6.3 被漠然视之的生命权" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 2 "6.3" "\\section{被漠然视之的生命权}" 3008)
+
+(toc "toc" "    6.4 20世纪的战争" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 2 "6.4" "\\section{20世纪的战争}" 3668)
+
+("20stdied" "t" "20世纪死于战争、屠杀和压迫的人数统计表" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil)
+
+(toc "toc" "    6.5 “人相食”的中国史" "/home/sd44/xueshu/dingjia/data/shengming.tex" nil 2 "6.5" "\\section{“人相食”的中国史}" 4757)
+
+(eof "/home/sd44/xueshu/dingjia/data/shengming.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/gongzuori.tex")
+
+(toc "toc" "  7 草稿之一——工作制" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 1 "7" "\\chapter{草稿之一——工作制}" 1)
+
+(toc "toc" "    7.1 传统超时加班企业" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 2 "7.1" "\\section{传统超时加班企业}" 111)
+
+(toc "toc" "    7.2 新型超时加班企业" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 2 "7.2" "\\section{新型超时加班企业}" 592)
+
+(toc "toc" "    7.3 工作时长立法" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 2 "7.3" "\\section{工作时长立法}" 2179)
+
+(toc "toc" "    7.4 超时加班的危害和原理" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 2 "7.4" "\\section{超时加班的危害和原理}" 2699)
+
+("sec:gzryuanli" "s" "对于超长劳动时间的论述和批判，首推马克思。希望大家能摆脱对马克思或褒或贬的刻板印象，单从理论本身出发判断而不是意识形态的肯定或否定。 150多年前的《资本论》中提到的一些情况，居然仍高度适用我们的当前" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil)
+
+(toc "toc" "    7.5 工时改革问题的民族国家与全球化困局" "/home/sd44/xueshu/dingjia/data/gongzuori.tex" nil 2 "7.5" "\\section{工时改革问题的民族国家与全球化困局}" 5537)
+
+(eof "/home/sd44/xueshu/dingjia/data/gongzuori.tex")
+
+(toc "toc" "Part III 国家" "/home/sd44/xueshu/dingjia/main.tex" nil 0 "Part III" "\\part{国家}" 594)
+
+(bof "/home/sd44/xueshu/dingjia/data/assange.tex")
+
+(toc "toc" "  8 草稿之一——维基解密、阿桑奇与西方政治" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 1 "8" "\\chapter{草稿之一——维基解密、阿桑奇与西方政治}" 2)
+
+(toc "toc" "    8.1 维基解密简述" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 2 "8.1" "\\section{维基解密简述}" 33)
+
+(toc "toc" "    8.2 希拉里邮件门事件" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 2 "8.2" "\\section{希拉里邮件门事件}" 355)
+
+(toc "toc" "    8.3 维基解密的理念" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 2 "8.3" "\\section{维基解密的理念}" 3049)
+
+(toc "toc" "    8.4 维基解密的缺陷及潜在问题" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 2 "8.4" "\\section{维基解密的缺陷及潜在问题}" 3546)
+
+(toc "toc" "    8.5 希拉里邮件门之后" "/home/sd44/xueshu/dingjia/data/assange.tex" nil 2 "8.5" "\\section{希拉里邮件门之后}" 4832)
+
+(eof "/home/sd44/xueshu/dingjia/data/assange.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex")
+
+(toc "toc" "  9 草稿——政治经济学视角下的中早期苏俄科社实践" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 1 "9" "\\chapter[中早期苏俄科社实践]{草稿——政治经济学视角下的中早期苏俄科社实践}" 1)
+
+("chap:russiachina" "s" "\\section{序言} 苏联问题，无论在东西方还是在苏联、苏联解体后各个国家，都是一个敏感话题。对苏联问题的学术研究常常带有很多国家、政治、经济集团的功利目的，在不同时期和环境为不同利益背书；也常被" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil)
+
+(toc "toc" "    9.1 序言" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.1" "\\section{序言}" 71)
+
+(toc "toc" "    9.2 马克思“科学社会主义”的缺陷" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.2" "\\section{马克思“科学社会主义”的缺陷}" 983)
+
+("sec:marxkexue" "s" "自马克思中年毕业前夕作文《青年在选择职业时的考虑》至其生命终结时未完成的一些作品，我们都可以鲜明看到贯穿马克思思想的一条主线——社会伦理。马克思的社会伦理不是个人伦理，它讲求人的“\\textbf{社会" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil)
+
+(toc "toc" "    9.3 杜冈-巴拉诺夫斯基对苏俄的影响" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.3" "\\section{杜冈-巴拉诺夫斯基对苏俄的影响}" 4642)
+
+(toc "toc" "    9.4 二十世纪初至十月革命的俄国" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.4" "\\section{二十世纪初至十月革命的俄国}" 6015)
+
+(toc "toc" "    9.5 十月革命之后到新经济政策" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.5" "\\section{十月革命之后到新经济政策}" 8705)
+
+(toc "toc" "    9.6 新经济政策时期的争论" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.6" "\\section{新经济政策时期的争论}" 12273)
+
+(toc "toc" "    9.7 斯大林模式" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.7" "\\section{斯大林模式}" 16431)
+
+(toc "toc" "    9.8 早中期苏联社会主义性质的总结" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 2 "9.8" "\\section{早中期苏联社会主义性质的总结}" 19685)
+
+(toc "toc" "      9.8.1 苏联领导人对历史唯物主义的深刻认识" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 3 "9.8.1" "\\subsection{苏联领导人对历史唯物主义的深刻认识}" 19958)
+
+(toc "toc" "      9.8.2 苏联领导人对历史唯物主义的背离" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil 3 "9.8.2" "\\subsection{苏联领导人对历史唯物主义的背离}" 22237)
+
+("sec:beili" "s" "马恩所提的社会主义，违背了他们的历史唯物主义，这是马恩的错误，\\cref{sec:marxkexue}已经予以论述。 十月革命胜利后，葛兰西立刻写了一篇热情洋溢的文章——《反<资本论>的革命》。文章中" "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/guojiaxingzhi.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/historychina.tex")
+
+(toc "toc" "  10 计划经济时期 1949--1978年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 1 "10" "\\chapter{计划经济时期 1949--1978年}" 1)
+
+(toc "toc" "    10.1 社会主义过渡时期 1949--1956年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 2 "10.1" "\\section{社会主义过渡时期 1949--1956年}" 31)
+
+("sec:hongguodu" "s" "1949年新中国成立到1956年社会主义改造完成，是新民主主义社会向社会主义社会过渡的时期。 \\begin{enumerate} " "/home/sd44/xueshu/dingjia/data/historychina.tex" nil)
+
+(toc "toc" "    10.2 红色社会主义社会时期 1957--1978年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 2 "10.2" "\\section{红色社会主义社会时期 1957--1978年}" 3441)
+
+(toc "toc" "      10.2.1 赫鲁晓夫的秘密报告" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.1" "\\subsection{赫鲁晓夫的秘密报告}" 3505)
+
+(toc "toc" "      10.2.2 整风到反右派" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.2" "\\subsection{整风到反右派}" 4022)
+
+(toc "toc" "      10.2.3 浮夸风、命令风、共产风、生产瞎指挥风、干部特权风" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.3" "\\subsection{浮夸风、命令风、共产风、生产瞎指挥风、干部特权风}" 5152)
+
+(toc "toc" "      10.2.4 大跃进中后期的安徽省" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.4" "\\subsection{大跃进中后期的安徽省}" 7780)
+
+(toc "toc" "      10.2.5 对“大跃进”的补救措施及反思" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.5" "\\subsection{对“大跃进”的补救措施及反思}" 11889)
+
+(toc "toc" "      10.2.6 继续阶级斗争" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.6" "\\subsection{继续阶级斗争}" 14151)
+
+(toc "toc" "      10.2.7 笔者个人的总结" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "10.2.7" "\\subsection{笔者个人的总结}" 14608)
+
+(eof "/home/sd44/xueshu/dingjia/data/historychina.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/historychina2.tex")
+
+(toc "toc" "  11 市场经济体制过渡时期1978--1992年" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 1 "11" "\\chapter{市场经济体制过渡时期1978--1992年}" 1)
+
+("chap:1978" "s" "\\improve[inline]{在本章或下章加入 向社会主义市场经济过渡} 据世界银行数据\\footnote{\\url{https://data.worldbank.org.cn}} ，1978年的" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil)
+
+(toc "toc" "    11.1 整体意识形态转变" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.1" "\\section{整体意识形态转变}" 254)
+
+(toc "toc" "      11.1.1 合同定购制、主粮价格双轨制" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.1.1" "\\subsection{合同定购制、主粮价格双轨制}" 10799)
+
+(toc "toc" "      11.1.2  " "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.1.2" "\\subsection{}" 10852)
+
+(toc "toc" "      11.1.1 拨改贷" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.1.1" "\\subsection{拨改贷}" 15629)
+
+(toc "toc" "    11.2 企业改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.2" "\\section{企业改革}" 16460)
+
+(toc "toc" "      11.2.1 价格改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.2.1" "\\subsection{价格改革}" 18566)
+
+(toc "toc" "    11.3 金融体制改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.3" "\\section{金融体制改革}" 18942)
+
+(toc "toc" "    11.2 农村改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.2" "\\section{农村改革}" 3743)
+
+(toc "toc" "      11.2.1 包干到户、村社分设及合同订购" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.2.1" "\\subsection{包干到户、村社分设及合同订购}" 3759)
+
+(toc "toc" "      11.2.2 乡镇企业" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.2.2" "\\subsection{乡镇企业}" 6733)
+
+(toc "toc" "    11.3 城市改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.3" "\\section{城市改革}" 6895)
+
+(toc "toc" "    11.4 领导制度改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.4" "\\section{领导制度改革}" 7835)
+
+(toc "toc" "    11.5 财政体制改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 2 "11.5" "\\section{财政体制改革}" 9938)
+
+(toc "toc" "      11.5.1 财政体制改革的深层逻辑" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.5.1" "\\subsection{财政体制改革的深层逻辑}" 9956)
+
+(toc "toc" "      11.5.2 就业制度改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.5.2" "\\subsection{就业制度改革}" 10458)
+
+(toc "toc" "      11.5.3 扩大企业经营管理自主权" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.5.3" "\\subsection{扩大企业经营管理自主权}" 11089)
+
+(toc "toc" "      11.5.4 税制改革" "/home/sd44/xueshu/dingjia/data/historychina2.tex" nil 3 "11.5.4" "\\subsection{税制改革}" 11504)
+
+(eof "/home/sd44/xueshu/dingjia/data/historychina2.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/china.tex")
+
+(toc "toc" "  12 有关中国" "/home/sd44/xueshu/dingjia/data/china.tex" nil 1 "12" "\\chapter{有关中国}" 1)
+
+(toc "toc" "    12.1 削弱迷梦------论尼采的酒神和日神思想" "/home/sd44/xueshu/dingjia/data/china.tex" nil 2 "12.1" "\\section{削弱迷梦------论尼采的酒神和日神思想}" 566)
+
+("sec:nicai" "s" "在尼采的美学概念中，日神和酒神，即阿波罗（梦）和狄俄尼索斯（醉）两者均 为“\\textbf{迷醉的类型}”\\pagescite[][125]{ouxianghuanghun}。 \\begin{quot" "/home/sd44/xueshu/dingjia/data/china.tex" nil)
+
+(toc "toc" "    12.2 简论汪晖《当代中国的思想状况与现代性问题》" "/home/sd44/xueshu/dingjia/data/china.tex" nil 2 "12.2" "\\section{简论汪晖《当代中国的思想状况与现代性问题》}" 2245)
+
+(toc "toc" "    12.3 中国新自由主义简介" "/home/sd44/xueshu/dingjia/data/china.tex" nil 2 "12.3" "\\section{中国新自由主义简介}" 4519)
+
+(eof "/home/sd44/xueshu/dingjia/data/china.tex")
+
+(toc "toc" "Part IV 关于中国（未完成）" "/home/sd44/xueshu/dingjia/main.tex" nil 0 "Part IV" "\\part{关于中国（未完成）}" 727)
+
+(bof "/home/sd44/xueshu/dingjia/data/aboutchina.tex")
+
+(toc "toc" "  13 前言" "/home/sd44/xueshu/dingjia/data/aboutchina.tex" nil 1 "13" "\\chapter{前言}" 1)
+
+(toc "toc" "    13.1 中国不能乱" "/home/sd44/xueshu/dingjia/data/aboutchina.tex" nil 2 "13.1" "\\section{中国不能乱}" 15)
+
+(toc "toc" "    13.2 本篇立意" "/home/sd44/xueshu/dingjia/data/aboutchina.tex" nil 2 "13.2" "\\section{本篇立意}" 1379)
+
+(toc "toc" "    13.3 本篇文章结构" "/home/sd44/xueshu/dingjia/data/aboutchina.tex" nil 2 "13.3" "\\section{本篇文章结构}" 1887)
+
+(eof "/home/sd44/xueshu/dingjia/data/aboutchina.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/historychina.tex")
+
+(toc "toc" "  14 计划经济时期 1949--1978年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 1 "14" "\\chapter{计划经济时期 1949--1978年}" 1)
+
+(toc "toc" "    14.1 社会主义过渡时期 1949--1956年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 2 "14.1" "\\section{社会主义过渡时期 1949--1956年}" 31)
+
+("sec:hongguodu" "s" "1949年新中国成立到1956年社会主义改造完成，是新民主主义社会向社会主义社会过渡的时期。 \\begin{enumerate} " "/home/sd44/xueshu/dingjia/data/historychina.tex" nil)
+
+(toc "toc" "    14.2 红色社会主义社会时期 1957--1978年" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 2 "14.2" "\\section{红色社会主义社会时期 1957--1978年}" 3441)
+
+(toc "toc" "      14.2.1 赫鲁晓夫的秘密报告" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.1" "\\subsection{赫鲁晓夫的秘密报告}" 3505)
+
+(toc "toc" "      14.2.2 整风到反右派" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.2" "\\subsection{整风到反右派}" 4022)
+
+(toc "toc" "      14.2.3 浮夸风、命令风、共产风、生产瞎指挥风、干部特权风" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.3" "\\subsection{浮夸风、命令风、共产风、生产瞎指挥风、干部特权风}" 5152)
+
+(toc "toc" "      14.2.4 大跃进中后期的安徽省" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.4" "\\subsection{大跃进中后期的安徽省}" 7780)
+
+(toc "toc" "      14.2.5 对“大跃进”的补救措施及反思" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.5" "\\subsection{对“大跃进”的补救措施及反思}" 11889)
+
+(toc "toc" "      14.2.6 继续阶级斗争" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.6" "\\subsection{继续阶级斗争}" 14151)
+
+(toc "toc" "      14.2.7 笔者个人的总结" "/home/sd44/xueshu/dingjia/data/historychina.tex" nil 3 "14.2.7" "\\subsection{笔者个人的总结}" 14608)
+
+(eof "/home/sd44/xueshu/dingjia/data/historychina.tex")
+
+(appendix . t)
+
+(bof "/home/sd44/xueshu/dingjia/data/gerenshehui.tex")
+
+(toc "toc" "  A 个人社会学" "/home/sd44/xueshu/dingjia/data/gerenshehui.tex" nil 1 "A" "\\chapter{个人社会学}" 1)
+
+("chap:gerenshehuixue" "s" "对当前的时代，法兰克福学派和利奥塔曾提出过“资本主义可以吞噬一切”，对于资本现代性的批判更是多种多样，但是当前的社科理论和现实实践均未产生（事实上当前也不可能有）一个宏观、明确、完整和连贯的指向。全球" "/home/sd44/xueshu/dingjia/data/gerenshehui.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/gerenshehui.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/nicai.tex")
+
+(toc "toc" "  B 削弱迷梦------论尼采的酒神和日神思想" "/home/sd44/xueshu/dingjia/data/nicai.tex" nil 1 "B" "\\chapter{削弱迷梦------论尼采的酒神和日神思想}" 1)
+
+("chap:nicai" "s" "在尼采的美学概念中，日神和酒神，即阿波罗（梦）和狄俄尼索斯（醉）两者均为“\\textbf{迷醉的类型}”\\pagescite[][125]{ouxianghuanghun}。 \\begin{quota" "/home/sd44/xueshu/dingjia/data/nicai.tex" nil)
+
+(eof "/home/sd44/xueshu/dingjia/data/nicai.tex")
+
+(bof "/home/sd44/xueshu/dingjia/data/neoliber.tex")
+
+(toc "toc" "  C 新自由主义札记" "/home/sd44/xueshu/dingjia/data/neoliber.tex" nil 1 "C" "\\chapter{新自由主义札记}" 1)
+
+("chap:neoliber" "s" "本章因是札记性质，可能作为笔者开源免费电子书的一部分出现。 \\section{新自由主义的概念和实质宗旨} Newliberalism，也可称为\\textbf{社会自由主义}（Social liber" "/home/sd44/xueshu/dingjia/data/neoliber.tex" nil)
+
+(toc "toc" "    C.1 新自由主义的概念和实质宗旨" "/home/sd44/xueshu/dingjia/data/neoliber.tex" nil 2 "C.1" "\\section{新自由主义的概念和实质宗旨}" 73)
+
+(toc "toc" "    C.2 哈维对新自由主义实践的具体批判" "/home/sd44/xueshu/dingjia/data/neoliber.tex" nil 2 "C.2" "\\section{哈维对新自由主义实践的具体批判}" 2503)
+
+(toc "toc" "    C.3 联合国债务与人权问题独立专家的历年报告摘抄" "/home/sd44/xueshu/dingjia/data/neoliber.tex" nil 2 "C.3" "\\section{联合国债务与人权问题独立专家的历年报告摘抄}" 4523)
+
+(eof "/home/sd44/xueshu/dingjia/data/neoliber.tex")
+
+(bib "/home/sd44/xueshu/dingjia/ref/refs.bib")
+
+(eof "/home/sd44/xueshu/dingjia/main.tex")
+))
+

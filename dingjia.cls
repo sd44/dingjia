@@ -142,7 +142,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
   heightrounded,
   includemp = false, % includes the margin notes, \marginparwidth and \marginparsep, into body when calculating horizontal calculation.
   inner = 3.5cm,
-  outer = 3cm, 
+  outer = 3cm,
   % marginparwidth = 80pt,
   top = 3cm,
   bottom = 3cm,
@@ -269,19 +269,19 @@ footnoteleadingratio = 1.56]{zhlineskip}
 % 设置目录中各级缩进
 % \setlength{\cftsecindent}{2.5em}
 \setlength{\cftsubsecindent}{4em}
-% 
+%
 % 设置目录中 chapter 章节编号的宽度 (ctex 章节编号为中文, 需要特别注意).
 % 参考 <<LaTeX 入门>>, 刘海洋 编著, 电子工业出版社, 2013.6
 % \settowidth\cftchapnumwidth{第十章} % 最宽的可能编号
 % \renewcommand\cftchapaftersnumb{\hspace{0.5em}} % 额外间距
 % 定义所有的图片文件在 figures 子目录下
 \graphicspath{{figures/}}
-% 
+%
 \newenvironment{dedications}
 {
   \clearpage
   \thispagestyle{empty}
-  \vspace*{\stretch{1.5}}% some space at the top 
+  \vspace*{\stretch{1.5}}% some space at the top
   \large \itshape
   % \raggedleft          % flush to the right margin
   \par % end the paragraph
@@ -317,7 +317,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
 
 \RequirePackage{xargs}
 \RequirePackage[dvipsnames]{xcolor}  % Coloured text etc.
-\RequirePackage[colorinlistoftodos,prependcaption,textsize=small]{todonotes}
+\RequirePackage[colorinlistoftodos,prependcaption,textsize=small, disable]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
@@ -349,7 +349,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
     \includegraphics[width=0.9\textwidth]{dingjia/#1}
     \caption{#2}\label{fig:#1}
     \raggedright \small #3
-    \vfill 
+    \vfill
   \end{figure}
   \clearpage
 }
@@ -380,10 +380,10 @@ footnoteleadingratio = 1.56]{zhlineskip}
   \vspace*{1.5\drop}
   \raggedright
   \Large
-  {\hspace{0.25\textwidth}  作者：\@author }\par 
-  {\hspace{0.25\textwidth}  昵称：\@authornick }\par 
-  {\hspace{0.25\textwidth}  日期：\@date }\par 
-  {\hspace{0.25\textwidth}  网站：\texttt{\@authorurl} }\par 
+  {\hspace{0.25\textwidth}  作者：\@author }\par
+  {\hspace{0.25\textwidth}  昵称：\@authornick }\par
+  {\hspace{0.25\textwidth}  日期：\@date }\par
+  {\hspace{0.25\textwidth}  网站：\texttt{\@authorurl} }\par
   {\hspace{0.25\textwidth}  邮箱：\texttt{\@authormail} }\par
   \vfill\null
   \endgroup
@@ -453,7 +453,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \HTMLPageBottom{回到\LinkHome \qquad%
   \href{mailto:sd44sd44@yeah.net}{sd44sd44@yeah.net} \qquad%
   \url{http://sd44.gitee.io}\\ 欢迎转载，转载请注明本链接地址，最好再通知我一下，%
-  让我高兴高兴，哈哈。}      
+  让我高兴高兴，哈哈。}
 
 \CSSFilename{lwarp_sagebrush.css}
 \fi
