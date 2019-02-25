@@ -239,6 +239,9 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \crefname{note}{Commentaire}{Commentaires}
 \crefname{algorithm}{算法}{算法}
 \crefname{line}{行}{行}
+\RequirePackage{pdfpages, pdflscape}
+\RequirePackage[usestackEOL]{stackengine}
+\RequirePackage{tabularx, diagbox}
 
 \RequirePackage{bookmark}
 \RequirePackage{booktabs}
@@ -246,7 +249,9 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \RequirePackage{float}
 
 % 双栏排版
-% \RequirePackage{multicol}
+\RequirePackage{multicol}
+\setlength\columnsep{20pt} % This is the default columnsep for all pages
+
 % 有时候, 浮动的边注在双面模式下会出现在错误的一侧, mparhack 可以修正该问题
 % \RequirePackage{mparhack}
 
@@ -298,7 +303,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \def\uRoman#1{\Rnum{\the\value{#1}}}
 % \newcommand{\Rnum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
-\RequirePackage{enumitem}
+\RequirePackage[shortlabels]{enumitem}
 % \topsep 列表顶部与之前内容的额外空白，不含 \baselineskip
 % \partopsep 如果列表之前是一个空行，列表顶部的额外空白
 % \itemsep  列表各项之间额外的垂直空白
@@ -313,7 +318,29 @@ footnoteleadingratio = 1.56]{zhlineskip}
   \parindent, %labelindent = \parindent,
   parsep = 0ex, partopsep = 0ex, itemsep = 0.5em }
 
+\setlist[description]{style=standard, font=\large\sffamily\bfseries}
+
 % \setlist[1]{labelindent=\parindent} % Only the level 1
+
+
+\usepackage{multirow,tikz}
+\tikzset{every picture/.style={/utils/exec={\footnotesize}}}
+\usetikzlibrary{calc,patterns,decorations.pathreplacing, intersections}
+\usetikzlibrary{arrows,arrows.meta, datavisualization}
+
+\newdimen\XCoord
+\newdimen\YCoord
+
+\newcommand*{\ExtractCoordinate}[1]{\path (#1); \pgfgetlastxy{\XCoord}{\YCoord};}%
+% \newcommand*{\LabelCurrentCoordinate}[2]{\fill [#1] ($(\XCoord,\YCoord)$) circle (2pt) node [right] {#2}}%
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+
+\newtcolorbox{mybox}[2][]{enhanced jigsaw,fonttitle = \large\sffamily\bfseries, fontupper =
+  \small\itshape, fontlower = \small\itshape, before upper={\parindent=2\ccwd},
+  left=20pt, title=#2,#1}
+
 
 \RequirePackage{xargs}
 \RequirePackage[dvipsnames]{xcolor}  % Coloured text etc.
