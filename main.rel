@@ -11,7 +11,7 @@
 
 (is-multi t)
 
-(bibview-cache ("yangshuanggui" . "杨继绳 2009, 价格改革, 炎黄春秋 18") ("gaigelicheng" . "赵紫阳 2009, 改革历程") ("zhufuqiang" . "朱富强 2011, 帕累托改进原则能否应用于社会改革？, 学术月刊 82") ("bogaidaizhaizhuangu" . "董志凯 2016, 由“拨改贷”到“债转股”, 中国经济史研究 5") ("fengyunshi1b" . "张曙光 2017, 中国经济学风云史") ("fengyunshi1a" . "张曙光 2016, 中国经济学风云史") ("guojilaogongshijian" . "丁赛尔 国际劳工实践标准将对我国企业构成潜在威胁") ("linyifuzhai" . "林毅夫 “债转股”与国有企业改革") ("boyibo" . "薄一波 2008, 若干重大决策与事件的回顾（上下）") ("lumaisg" . "卢迈 1997, 实行“保量保价”的双轨制, 改革 54") ("taochangsheng" . "陶昌盛 2004, 中国粮食定价机制研究") ("zcstp" . "张成思 2009, 中国通货膨胀周期回顾与宏观政策启示, 亚太经济 66"))
+(bibview-cache ("xianxiangfenshui" . "贾康 & 白景明 2002, 县乡财政解困与财政体制创新, 经济研究 3") ("majuncaigai" . "马骏 1995, 中央与地方财政关系的改革, 当代中国研究") ("yangshuanggui" . "杨继绳 2009, 价格改革, 炎黄春秋 18") ("gaigelicheng" . "赵紫阳 2009, 改革历程") ("zhufuqiang" . "朱富强 2011, 帕累托改进原则能否应用于社会改革？, 学术月刊 82") ("bogaidaizhaizhuangu" . "董志凯 2016, 由“拨改贷”到“债转股”, 中国经济史研究 5") ("fengyunshi1b" . "张曙光 2017, 中国经济学风云史") ("fengyunshi1a" . "张曙光 2016, 中国经济学风云史") ("guojilaogongshijian" . "丁赛尔 国际劳工实践标准将对我国企业构成潜在威胁") ("linyifuzhai" . "林毅夫 “债转股”与国有企业改革") ("boyibo" . "薄一波 2008, 若干重大决策与事件的回顾（上下）") ("lumaisg" . "卢迈 1997, 实行“保量保价”的双轨制, 改革 54") ("taochangsheng" . "陶昌盛 2004, 中国粮食定价机制研究") ("zcstp" . "张成思 2009, 中国通货膨胀周期回顾与宏观政策启示, 亚太经济 66"))
 
 (master-dir . "/home/sd44/xueshu/dingjia/")
 

@@ -332,18 +332,18 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \newdimen\YCoord
 
 \newcommand*{\ExtractCoordinate}[1]{\path (#1); \pgfgetlastxy{\XCoord}{\YCoord};}%
-% \newcommand*{\LabelCurrentCoordinate}[2]{\fill [#1] ($(\XCoord,\YCoord)$) circle (2pt) node [right] {#2}}%
-\usepackage{tcolorbox}
-\tcbuselibrary{most}
+\newcommand*{\LabelCurrentCoordinate}[2]{\fill [#1] ($(\XCoord,\YCoord)$) circle (2pt) node [right] {#2}}%
+
+% \usepackage{tcolorbox}
+% \tcbuselibrary{most}
 
 
-\newtcolorbox{mybox}[2][]{enhanced jigsaw,fonttitle = \large\sffamily\bfseries, fontupper =
-  \small\itshape, fontlower = \small\itshape, before upper={\parindent=2\ccwd},
-  left=20pt, title=#2,#1}
+% \newtcolorbox{mybox}[2][]{enhanced jigsaw,fonttitle = \large\sffamily\bfseries, fontupper =
+%   \small\itshape, fontlower = \small\itshape, before upper={\parindent=2\ccwd},
+%   left=20pt, title=#2,#1}
 
 
 \RequirePackage{xargs}
-\RequirePackage[dvipsnames]{xcolor}  % Coloured text etc.
 \RequirePackage[colorinlistoftodos,prependcaption,textsize=small, disable]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
