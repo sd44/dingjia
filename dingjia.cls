@@ -119,11 +119,11 @@ footnoteleadingratio = 1.56]{zhlineskip}
 
 \RequirePackage[perpage, hang, symbol*]{footmisc}
 \DefineFNsymbols{cqufnsymbol}{
-  {\ding[1.3]{172}}    {\ding[1.3]{173}}
-  {\ding[1.3]{174}}    {\ding[1.3]{175}}
-  {\ding[1.3]{176}}    {\ding[1.3]{177}}
-  {\ding[1.3]{178}}    {\ding[1.3]{179}}
-  {\ding[1.3]{180}}    {\ding[1.3]{181}}
+  {\ding[1.1]{172}}    {\ding[1.1]{173}}
+  {\ding[1.1]{174}}    {\ding[1.1]{175}}
+  {\ding[1.1]{176}}    {\ding[1.1]{177}}
+  {\ding[1.1]{178}}    {\ding[1.1]{179}}
+  {\ding[1.1]{180}}    {\ding[1.1]{181}}
 }
 % 定义footnote的表示方法为cqufnsymbol
 \setfnsymbol{cqufnsymbol}
