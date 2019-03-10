@@ -176,6 +176,7 @@
   publisher = {中国社会科学出版社},
   isbn      = {9787500415480},
   address   = {北京},
+  file      = {:/home/sd44/xueshu/社会学论文原版/中国古代的食人.pdf:PDF},
 }
 
 @Article{renxiangshi,
@@ -204,6 +205,7 @@
   subtitle = {当代“艺术终结论”的哲学反思},
   number   = {02},
   pages    = {78-84},
+  file     = {:/home/sd44/xueshu/社会学论文原版/哲学如何剥夺艺术——当代“艺术终结论”的哲学反思.pdf:PDF},
 }
 
 @Article{dantuozhenduan,
@@ -243,6 +245,7 @@
   publisher  = {江苏人民出版社},
   isbn       = {7214029774},
   address    = {南京},
+  file       = {:/home/sd44/xueshu/社会学论文原版/艺术/艺术的终结 阿瑟·丹托（Arthur Danto）着....pdf:PDF},
 }
 
 @MastersThesis{fuwendantuo,
@@ -252,6 +255,7 @@
   date        = {2006-05-06},
   subtitle    = {论丹托的“艺术终结论”},
   address     = {济南},
+  file        = {:/home/sd44/xueshu/社会学论文原版/艺术/艺术终结了吗——付雯.pdf:PDF},
 }
 
 @Article{artistyinmou,
@@ -443,6 +447,7 @@
   institution = {云南大学},
   year        = {2011},
   address     = {云南},
+  file        = {:/home/sd44/xueshu/社会学论文原版/苏联/杜冈—巴拉诺夫斯基的经济周期理论及其影响.pdf:PDF},
 }
 
 @Book{lenin43,
@@ -640,11 +645,12 @@
 @Book{ouxianghuanghun,
   author     = {尼采},
   title      = {偶像的黄昏},
-  translator = {卫茂平},
   year       = {2007},
+  translator = {卫茂平},
   publisher  = {华东师范大学出版社},
   isbn       = {9787561747889},
   address    = {上海},
+  file       = {:/home/sd44/xueshu/社会学论文原版/尼采注疏集：偶像的黄昏.pdf:PDF},
 }
 
 
@@ -742,6 +748,7 @@
   year      = {1992},
   publisher = {中华书局},
   address   = {北京},
+  file      = {:/home/sd44/xueshu/社会学论文原版/中国/长江三角洲小农家庭与乡村发展.pdf:PDF},
 }
 
 @Article{shiyiwu,
@@ -752,6 +759,7 @@
   volume  = {27},
   number  = {4},
   pages   = {35-45+158},
+  file    = {:/home/sd44/xueshu/社会学论文原版/中国十一个五年计划实施情况回顾.pdf:PDF},
 }
 
 @Online{zhengshujie,
@@ -872,36 +880,47 @@
   pages    = {5-15},
 }
 
-
 @Article{shuangguizhi,
   author   = {王德文 and 黄季焜},
   title    = {中国粮食流通体制改革},
-  subtitle = {双轨过渡与双轨终结},
   journal  = {改革},
   year     = {2001},
-  issue   = {04},
+  subtitle = {双轨过渡与双轨终结},
+  issue    = {04},
   pages    = {99-106},
+  file     = {:/home/sd44/xueshu/社会学论文原版/中国粮食流通体制改革_双轨过渡与双轨终结.pdf:PDF},
 }
 
+@Article{liangshi40,
+  author   = {胡小平 and 范传棋 and 高洪洋},
+  title    = {改革开放40年中国粮食价格调控的回顾与展望},
+  journal  = {四川师范大学学报（社会科学版）},
+  year     = {2018},
+  volume   = {45},
+  issue    = {06},
+  pages    = {23-29},
+  file     = {:/home/sd44/xueshu/社会学论文原版/改革开放40年中国粮食价格调控的回顾与展望.pdf:PDF},
+}
 
 @Article{lumaisg,
   author   = {卢迈},
   title    = {实行“保量保价”的双轨制},
-  subtitle = {我国粮食购销体制改革的目标模式},
   journal  = {改革},
   year     = {1997},
-  issue   = {03},
+  subtitle = {我国粮食购销体制改革的目标模式},
+  issue    = {03},
   pages    = {54-57},
+  file     = {:/home/sd44/xueshu/社会学论文原版/实行“保量保价”的双轨制——我国粮食购销体制改革的目标模式.pdf:PDF},
 }
 
-
 @Article{zcstp,
-  author   = {张成思},
-  title    = {中国通货膨胀周期回顾与宏观政策启示},
-  journal  = {亚太经济},
-  year     = {2009},
+  author  = {张成思},
+  title   = {中国通货膨胀周期回顾与宏观政策启示},
+  journal = {亚太经济},
+  year    = {2009},
   issue   = {02},
-  pages    = {66-70},
+  pages   = {66-70},
+  file    = {:/home/sd44/xueshu/社会学论文原版/中国通货膨胀周期回顾与宏观政策启示.pdf:PDF},
 }
 
 @PhdThesis{taochangsheng,
@@ -909,6 +928,205 @@
   title       = {中国粮食定价机制研究},
   institution = {复旦大学},
   year        = {2004},
+  file        = {:/home/sd44/xueshu/社会学论文原版/中国粮食定价机制研究.pdf:PDF},
+}
+
+
+@Article{guoyoujinrong,
+  author   = {林毅夫 and 李志赟},
+  title    = {中国的国有企业与金融体制改革},
+  journal  = {经济学},
+  year     = {2005},
+  issue   = {03},
+  pages    = {913-936},
+}
+
+@Article{niaolongjingji,
+  author   = {朱佳木},
+  title    = {谈谈陈云对计划与市场关系问题的思考},
+  journal  = {党的文献},
+  year     = {2000},
+  issue   = {03},
+  pages    = {8-20},
+}
+
+
+@Online{sunlipingkuibai,
+  author       = {孙立平},
+  title        = {中国社会正在加速走向溃败},
+  date         = {2011-10-22},
+  url          = {http://blog.people.com.cn/article/1319287379166.html},
+  organization = {人民网},
+}
+
+@Book{maohehoumao1,
+  author    = {钱理群},
+  title     = {毛泽东时代和后毛泽东时代（1949--2009）},
+  year      = {2012},
+  subtitle  = {另一种历史书写（上）},
+  publisher = {联经出版事业股份有限公司},
+  isbn      = {9789570839241},
+  address   = {台北},
+  file      = {:/home/sd44/xueshu/社会学论文原版/毛泽东时代和后毛泽东时代（上）.pdf:PDF},
+}
+
+@Book{maohehoumao2,
+  author    = {钱理群},
+  title     = {毛泽东时代和后毛泽东时代（1949--2009）},
+  year      = {2012},
+  subtitle  = {另一种历史书写（下）},
+  publisher = {联经出版事业股份有限公司},
+  isbn      = {9789570839258},
+  address   = {台北},
+  file      = {:/home/sd44/xueshu/社会学论文原版/毛泽东时代和后毛泽东时代(下).pdf:PDF},
+}
+
+@Book{fengyunshi1a,
+  author    = {张曙光},
+  title     = {中国经济学风云史},
+  year      = {2016},
+  subtitle  = {经济研究所60年（上卷（I））},
+  publisher = {八方文化创作室},
+  isbn      = {9789813145252},
+  address   = {新加坡},
+  file      = {:/home/sd44/xueshu/社会学论文原版/中國經濟學風雲史：上卷〈I〉_9789813145252.pdf:PDF},
+}
+
+@Book{fengyunshi1b,
+  author    = {张曙光},
+  title     = {中国经济学风云史},
+  year      = {2017},
+  subtitle  = {经济研究所60年（上卷（II））},
+  publisher = {八方文化创作室},
+  isbn      = {9789813230569},
+  address   = {新加坡},
+  file      = {:/home/sd44/xueshu/社会学论文原版/中国经济学风云史_上卷〈II〉_9789813230569.pdf:PDF},
+}
+
+
+@Article{zhufuqiang,
+  author   = {朱富强},
+  title    = {帕累托改进原则能否应用于社会改革？},
+  subtitle = {实践的可行性和内在的保守性},
+  journal  = {学术月刊},
+  year     = {2011},
+  issue   = {10},
+  pages    = {82-90},
+}
+
+
+@Article{songguiwu,
+  author   = {宋圭武},
+  title    = {“帕累托最优”质疑},
+  journal  = {甘肃理论学刊},
+  year     = {2008},
+  issue   =  {03},
+  pages    = {67-69},
+}
+
+
+@Article{yaoyang,
+  author   = {姚洋},
+  title    = {作为一种分配正义原则的帕累托改进},
+  journal  = {学术月刊},
+  year     = {2016},
+  issue   =  {10},
+  pages    = {44-54},
+}
+
+@Article{yangshuanggui,
+  author   = {杨继绳},
+  title    = {价格改革},
+  subtitle = {经济改革中的一步险棋},
+  journal  = {炎黄春秋},
+  year     = {2009},
+  issue   =  {03},
+  pages    = {18-23},
+}
+
+@PhdThesis{wangqiangshehui,
+  author      = {汪强},
+  title       = {论我国社会主义市场经济},
+  institution = {中共中央党校},
+  year        = {2012},
+  file        = {:/home/sd44/xueshu/社会学论文原版/论我国社会主义市场经济.pdf:PDF},
+}
+
+@Book{gaigelicheng,
+  author    = {赵紫阳},
+  title     = {改革历程},
+  year      = {2009},
+  subtitle  = {完整录音 还原历史},
+  publisher = {新世纪出版社},
+  isbn      = {9789881720276},
+  address   = {香港},
+  file      = {:/home/sd44/xueshu/社会学论文原版/赵紫阳：改革历程.pdf:PDF},
+}
+
+@Online{difangmeiqian,
+  author       = {江大桥},
+  title        = {我们地方没钱},
+  subtitle     = {分税制改革下中央与地方的博弈},
+  url          = {https://www.gelonghui.com/p/173177},
+  organization = {格隆汇},
+}
+
+@Article{xianxiangfenshui,
+  author   = {贾康 and 白景明},
+  title    = {县乡财政解困与财政体制创新},
+  subtitle = {经济改革中的一步险棋},
+  journal  = {经济研究},
+  year     = {2002},
+  issue   =  {02},
+  pages    = {3-9},
+}
+
+
+@Article{huilvshi,
+  author =       {杨帆},
+  title =        {人民币汇率制度历史研究},
+  journal =      {中国经济史研究},
+  year =         {2005},
+  issue = {04},
+  pages =     {59-64},
+}
+
+
+@Article{laodongzhiduyuanfang,
+  author =       {袁方},
+  title =        {中国就业问题和劳动制度改革},
+  journal =      {社会学研究},
+  year =         {1992},
+  issue =    {06},
+  pages =     {1-5},
+}
+
+
+@Article{guantaohuigai,
+  author =       {管涛},
+  title =        {四次人民币汇改的经验与启示},
+  journal =      {金融论坛},
+  year =         {2017},
+  issue =    {03},
+  pages =     {3-8+18},
+}
+
+@PhdThesis{eryuancaizheng,
+  author      = {曾晟},
+  title       = {中国经济转型中的二元财政结构研究},
+  institution = {华中科技大学},
+  year        = {2005},
+  file        = {:/home/sd44/xueshu/社会学论文原版/中国经济转型中的二元财政结构研究.pdf:PDF},
+}
+
+
+@Article{6cibodong,
+  author =       {温铁军},
+  title =        {中国50年来6次粮食供求波动分析},
+  journal =      {山东省农业管理干部学院学报},
+  year =         {2001},
+  issue =    {02},
+  pages =        {7-9},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

@@ -137,7 +137,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \AtBeginEnvironment{quotation}{\itshape }
 
 
-\RequirePackage{ geometry}
+\RequirePackage{geometry}
 \geometry{%
   a4paper,
   heightrounded,
