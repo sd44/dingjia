@@ -1,23 +1,5 @@
-\documentclass[tikz,border=0pt]{standalone}
-\usepackage[fontset=sourcesans]{ctex}
-\usepackage{tabularx,booktabs}
-\usepackage{pgfplots,tikz}
-
-\pgfplotsset{
-  width=14cm,height=6cm,
-  compat=newest,
-  compat/show suggested version=false,
-  tick label style={font=\tiny},
-  label style={font=\small},
-  legend style={font=\footnotesize},
-  label shift=-4pt,
-}
-
-\begin{document}
-
-
 \begin{tikzpicture}[baseline]
-  \begin{axis}[height=8cm,no markers,every axis/.append style={line width=1pt},
+  \begin{axis}[width=13cm,height=8cm,no markers,every axis/.append style={line width=1pt},
     cycle list={
       {blue,mark=*},
       {red,mark=square},
@@ -28,15 +10,19 @@
       }% <-- don’t add a comma here
     },
     % grid=major,
-    extra x ticks={1984,1988,1993,1998,2009},
+    extra x ticks={1984,1988,1993,1999,2009},
     extra x tick style={grid=major},
-    extra x tick labels={\textcolor{blue}{1984},\textcolor{blue}{1988},\textcolor{blue}{1993},\textcolor{blue}{1998},\textcolor{blue}{2009}},
+    extra x tick labels={\textcolor{blue}{1984},\textcolor{blue}{1988},\textcolor{blue}{1993},\textcolor{blue}{1999},\textcolor{blue}{2009}},
     ymajorgrids,
-    xlabel=年份, ylabel=较上年增长率（$\%$）,
-    ytick distance=10,
+    % xlabel=年份,
+    ylabel=较上年增长率（$\%$）,
     legend entries={$M_0$货币供应量, 固定资产投资% , 房地产投资
     },
     % xtick=data,
+    ymin=-12,
+    ytick={-10,0,...,60},
+    xmin=1976,
+    xtick={1975,1980,...,2020},
     xticklabel style= {/pgf/number format/1000 sep=,rotate=60,anchor=east},
     ]
 \addplot table [x=x, y=mm, col sep=comma] {tablecsv.csv};
@@ -47,20 +33,22 @@
 
 
 \begin{tikzpicture}[baseline]
-  \begin{axis}[no markers,every axis/.append style={line width=1pt},cycle list name=exotic,
+  \begin{axis}[width=13cm,height=6cm,no markers,every axis/.append style={line width=1pt},cycle list name=exotic,
     % grid=major,
-    extra x ticks={1984,1988,1994,1998,2009},
+    extra x ticks={1984,1988,1994,1999,2009},
     extra x tick style={grid=major},
-    extra x tick labels={\textcolor{blue}{1984},\textcolor{blue}{1988},\textcolor{blue}{1994},\textcolor{blue}{1998},\textcolor{blue}{2009}},
+    extra x tick labels={\textcolor{blue}{1984},\textcolor{blue}{1988},\textcolor{blue}{1994},\textcolor{blue}{1999},\textcolor{blue}{2009}},
     ymajorgrids,
     xlabel=年份, ylabel=较上年增长率（$\%$）,
-    % xtick=data,
+    xmin=1976,
+    xtick={1975,1980,...,2020},
     xticklabel style= {/pgf/number format/1000 sep=,rotate=60,anchor=east},
+    % ymin=-12,
+    ytick={0,10,20},
+    yticklabels={$0$,$10$,$\phantom{-}20$},
     legend entries={消费价格指数, 国内生产总值},
     ]
 \addplot table [x=x, y=cpi, col sep=comma] {tablecsv.csv};
 \addplot table [x=x, y=gdp, col sep=comma] {tablecsv.csv};
 \end{axis}
 \end{tikzpicture}
-
-\end{document}

@@ -283,10 +283,19 @@ footnoteleadingratio = 1.56]{zhlineskip}
 
 % \setlist[1]{labelindent=\parindent} % Only the level 1
 
-\RequirePackage{tikz}
+\RequirePackage{tikz, pgfplots}
 \tikzset{every picture/.style={/utils/exec={\footnotesize}}}
 \usetikzlibrary{calc,patterns,decorations.pathreplacing, intersections}
 \usetikzlibrary{arrows,arrows.meta, datavisualization}
+
+\pgfplotsset{
+  compat=newest,
+  compat/show suggested version=false,
+  tick label style={font=\tiny},
+  label style={font=\small},
+  legend style={font=\footnotesize},
+  label shift=-4pt,
+}
 
 \newdimen\XCoord
 \newdimen\YCoord
