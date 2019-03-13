@@ -74,8 +74,8 @@ latexmk,                    % Use latexmk to compile.
 \setsansfont{TeX Gyre Heros}
 \setmonofont[Scale=1]{Libertinus Mono}
 
-\RequirePackage[bodytextleadingratio = 1.6, restoremathleading = true,
-footnoteleadingratio = 1.56]{zhlineskip}
+\RequirePackage[bodytextleadingratio = 1.67, restoremathleading = true,
+footnoteleadingratio = 1.6]{zhlineskip}
 
 
 \ifding@lwarp
@@ -106,9 +106,9 @@ footnoteleadingratio = 1.56]{zhlineskip}
 \RequirePackage{graphicx}
 \graphicspath{{figures/}}
 
-\RequirePackage[figureposition=bottom, tableposition=top]{caption}
-\DeclareCaptionLabelSeparator{zhspace}{\hspace{\ccwd}}
-\captionsetup{font=small, labelfont=bf, labelsep = zhspace, format = hang}
+\RequirePackage{caption}
+\DeclareCaptionLabelSeparator{zhspace}{\hspace{2em}}
+\captionsetup{font=small, labelfont=bf, labelsep = zhspace, format = hang, figureposition=bottom, tableposition=top}
 \newcommand{\capsource}[1]{ \vspace{-8pt} \caption*{\mdseries \footnotesize {#1}} } % 自定义图表来源
 % 命令，vspace可酌情调整。
 
@@ -196,7 +196,7 @@ footnoteleadingratio = 1.56]{zhlineskip}
   tight-spacing=true,
   % round-mode=places,
   % round-precision=2,
-  round-integer-to-decimal=true,
+  % round-integer-to-decimal=true,
   per-mode=symbol,
   detect-all,
 }
