@@ -74,7 +74,7 @@ latexmk,                    % Use latexmk to compile.
 \setsansfont{TeX Gyre Heros}
 \setmonofont[Scale=1]{Libertinus Mono}
 
-\RequirePackage[bodytextleadingratio = 1.67, restoremathleading = true,
+\RequirePackage[bodytextleadingratio = 1.68, restoremathleading = true,
 footnoteleadingratio = 1.6]{zhlineskip}
 
 
@@ -107,7 +107,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \graphicspath{{figures/}}
 
 \RequirePackage{caption}
-\DeclareCaptionLabelSeparator{zhspace}{\hspace{2em}}
+\DeclareCaptionLabelSeparator{zhspace}{：}
 \captionsetup{font=small, labelfont=bf, labelsep = zhspace, format = hang, figureposition=bottom, tableposition=top}
 \newcommand{\capsource}[1]{ \vspace{-8pt} \caption*{\mdseries \footnotesize {#1}} } % 自定义图表来源
 % 命令，vspace可酌情调整。
