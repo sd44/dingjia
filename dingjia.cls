@@ -78,12 +78,12 @@ latexmk,                    % Use latexmk to compile.
 footnoteleadingratio = 1.6]{zhlineskip}
 
 
-\ifding@lwarp
-\begin{warpHTML}
-  \makeatletter
-  \let\addtocontents\newfloat@addtocontents@ORI
-\end{warpHTML}
-\fi
+% \ifding@lwarp
+% \begin{warpHTML}
+%   \makeatletter
+%   \let\addtocontents\newfloat@addtocontents@ORI
+% \end{warpHTML}
+% \fi
 \RequirePackage[backend=biber,style=gb7714-2015,backref=true]{biblatex}
 \addbibresource[location=local]{ref/refs.bib}
 
