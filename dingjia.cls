@@ -30,8 +30,8 @@
   today = {small},
   subsection/format += \centering,
   part/pagestyle = empty,
-  chapter = {
-    pagestyle = empty, beforeskip = {-30pt}, afterskip = {20pt plus 5pt}},
+  % chapter = {
+  %   pagestyle = empty, beforeskip = {-30pt}, afterskip = {20pt plus 5pt}},
   section =
   {beforeskip = {3ex plus 1ex minus 0.2ex}, afterskip = {2.3ex plus 0.2ex}},
   subsection =
