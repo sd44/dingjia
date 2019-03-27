@@ -395,7 +395,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 默认情况下,LaTeX 要求每页的文字至少占据 20%,否则该页就只单独放置一个浮动环境。而这通常不是我们想要的。我们将这个要求降低到 5%。
-\renewcommand*{\textfraction}{0.05}
+\renewcommand*{\textfraction}{0.1}
 
 % 有时如果多个浮动环境连续放在一起, LaTeX 会将它们分在几个不同页,即使它们可在同一
 % 页放得下。我们可以通过修改\topfraction 和\bottomfraction分别设置顶端和底端的浮
@@ -403,7 +403,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \renewcommand*{\topfraction}{0.9}
 \renewcommand*{\bottomfraction}{0.8}
 
-% 有时 LaTeX 会把一个浮动环境单独放在一页,我们要求这个环境至少要占据 85% 才能单独放在一页。
+% 有时 LaTeX 会把一个浮动环境单独放在一页,我们要求这个环境至少要占据 80% 才能单独放在一页。
 % 注意: \floatpagefraction 的数值必须小于\topfraction。
 \renewcommand*{\floatpagefraction}{0.80}
 
