@@ -1,0 +1,111 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+% \usepackage{graphicx}
+% \usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+\begin{table}[htbp!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lcccccccccccccll@{}}
+      \toprule
+      & \multicolumn{6}{c}{单位：万亿元} & \multicolumn{1}{l}{} & \multicolumn{6}{c}{与GDP的百分比} &  &  \\
+      & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 &  & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 &  &  \\ \midrule
+      中央政府 & 15 & 17 & 21 & 23 & 26 & 29 &  & 16 & 17 & 20 & 20 & 22 & 23 & \cellcolor[HTML]{FFCCC9} & \cellcolor[HTML]{FD6864} \\
+      地方政府 & 18 & 21 & 26 & 30 & 35 & 40 &  & 20 & 22 & 25 & 27 & 30 & 32 & \multirow{-2}{*}{\cellcolor[HTML]{FFCCC9}\begin{tabular}[c]{@{}l@{}}官方政\\ 府债务\end{tabular}} & \cellcolor[HTML]{FD6864} \\
+      地方政府融资平台(可能） & 35 & 40 & 45 & 50 & 57 & 66 &  & 38 & 40 & 44 & 44 & 48 & 53 &  & \cellcolor[HTML]{FD6864} \\
+      政府基金\footnotemark[1] & 6 & 7 & 9 & 12 & 14 & 16 &  & 6 & 7 & 9 & 10 & 12 & 13 &  & \multirow{-4}{*}{\cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}IMF\\ 增扩\\ 政府\\ 债务\end{tabular}} \\
+      家庭 & 48 & 55 & 63 & 71 & 73 & 75 &  & 52 & 56 & 62 & 62 & 61 & 61 &  & \cellcolor[HTML]{34CDF9} \\
+      企业(不包括地方政府融资平台) & 105 & 111 & 121 & 128 & 142 & 153 &  & 115 & 112 & 118 & 113 & 119 & 123 &  & \multirow{-2}{*}{\cellcolor[HTML]{34CDF9}\begin{tabular}[c]{@{}l@{}}私人部\\ 门债务\end{tabular}} \\
+      &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+      \textbf{备忘项} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+
+      合计 & 227 & 252 & 285 & 315 & 348 & 380 &  & 248 & 254 & 278 & 277 & 291 & 306 &  &  \\
+      广义政府债务 & 33 & 38 & 47 & 54 & 62 & 69 &  & 36 & 38 & 45 & 47 & 51 & 56 &  &  \\
+      IMF增扩政府债务 & 74 & 85 & 101 & 115 & 132 & 151 &  & 80 & 86 & 98 & 101 & 110 & 122 &  &  \\
+      IMF增扩政府债务（仅地方） & 53 & 61 & 71 & 80 & 92 & 106 &  & 58 & 62 & 69 & 70 & 77 & 85 &  &  \\
+      &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+      名义GDP & 92 & 99 & 103 & 114 & 120 & 124 &  &  &  &  &  &  &  &  &  \\ \bottomrule
+    \end{tabular}%
+  }
+
+  \raggedright
+  \footnotemark[1]{\tiny 政府指导基金和专项建设基金（仅包括社会资本部分）。}
+
+  \centering
+  \caption{中国非金融部门债务}
+  \label{tab:my-table}
+  \capsource{来源：CEIC数据有限公司；Capital IQ；中国财政部；以及IMF工作人员的估计。}
+\end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[hbtp!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llllllllllllllll@{}}
+      \toprule
+      &  & 1950s & 1960s & 1968 & 1970s & 1980s & 1986 & 1990s & 2000s & 2004 & 2010s & 2019 & 2020 & 2021 & 2022 \\ \midrule
+      \multicolumn{2}{l}{\textbf{世界}} & \textbf{96.8} & \textbf{101.5} & \textbf{106.4} & \textbf{115} & \textbf{144.3} & \textbf{156.8} & \textbf{180.1} & \textbf{196.8} & \textbf{198.6} & \textbf{219.4} & \textbf{228.9} & \textbf{258} & \textbf{248.1} & \textbf{238.1} \\
+      \multicolumn{2}{l}{\textbf{发达经济体}} & \textbf{110} & \textbf{115.4} & \textbf{118.9} & \textbf{133.6} & \textbf{165.4} & \textbf{177.1} & \textbf{202} & \textbf{229.5} & \textbf{225.9} & \textbf{267.4} & \textbf{268.8} & \textbf{301.3} & \textbf{290.1} & \textbf{277.9} \\
+      & 欧洲地区 & 53.5 & 68.1 & 70.7 & 118.5 & 144.1 & 147.3 & 176.5 & 214.4 & 208.6 & 255.1 & 246.7 & 273.6 & 266.8 & 254.4 \\
+      & 日本 & 13.1 & 79.7 & 127.9 & 157.5 & 229.5 & 242.2 & 296.1 & 336.7 & 333.5 & 386.9 & 400.9 & 442.2 & 439.8 & 447.4 \\
+      & 英国 & 134 & 120.5 & 129 & 116.7 & 118.7 & 125.7 & 153.1 & 205.2 & 197.3 & 248.5 & 240.8 & 279.1 & 269.3 & 252.1 \\
+      & 美国 & 133.5 & 140.4 & 138.7 & 139.8 & 163.2 & 176.8 & 189.1 & 218.3 & 217.7 & 256 & 260.3 & 297.4 & 283.5 & 273.9 \\
+      \multicolumn{2}{l}{\textbf{新兴市场经济体}} & \textbf{28.2} & \textbf{33.1} & \textbf{37.8} & \textbf{39.5} & \textbf{65.5} & \textbf{72.6} & \textbf{87.2} & \textbf{101.6} & \textbf{102.7} & \textbf{148.5} & \textbf{176.8} & \textbf{201.2} & \textbf{195.3} & \textbf{191.2} \\
+      & 中国 &  &  &  &  & 71.3 & 73.4 & 97.2 & 137.9 & 142.4 & 211.5 & 246.8 & 268.8 & 264.9 & 272.1 \\
+      & 其他 & 28.2 & 33.1 & 37.8 & 39.5 & 65.7 & 72.5 & 85.4 & 91 & 91.6 & 110.6 & 123.1 & 141.1 & 131.8 & 124.2 \\
+      \multicolumn{2}{l}{\textbf{低收入发展中国家}} & \textbf{} & \textbf{} & \textbf{} & \textbf{20.2} & \textbf{43.6} & \textbf{51.5} & \textbf{73.7} & \textbf{61.9} & \textbf{65.3} & \textbf{61.9} & \textbf{77.3} & \textbf{85.3} & \textbf{87.4} & \textbf{87.8} \\ \bottomrule
+    \end{tabular}%
+  }
+  \caption{全球债务总额（占GDP百分比，加权平均数）}
+  \label{tab:totaldebt}
+
+
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llllllllllllllll@{}}
+      \toprule
+      &  & 1950s & 1960s & 1968 & 1970s & 1980s & 1986 & 1990s & 2000s & 2004 & 2010s & 2019 & 2020 & 2021 & 2022 \\ \midrule
+      \multicolumn{2}{l}{\textbf{世界}} & \textbf{56.2} & \textbf{39.8} & \textbf{36.3} & \textbf{33.1} & \textbf{47.6} & \textbf{54.3} & \textbf{62} & \textbf{66.5} & \textbf{69.8} & \textbf{81} & \textbf{84.9} & \textbf{100.4} & \textbf{96} & \textbf{92} \\
+      \multicolumn{2}{l}{\textbf{发达经济体}} & \textbf{64} & \textbf{44.3} & \textbf{39.5} & \textbf{36.1} & \textbf{50.7} & \textbf{57.5} & \textbf{66.4} & \textbf{75.3} & \textbf{76.8} & \textbf{104.6} & \textbf{105.4} & \textbf{124.4} & \textbf{118.7} & \textbf{113.5} \\
+      & 欧洲地区 & 32.5 & 24.7 & 25 & 27.7 & 47 & 52.1 & 67 & 69.9 & 69.7 & 90.9 & 85.9 & 99.2 & 97.3 & 93.2 \\
+      & 日本 & 13.1 & 10.1 & 11.8 & 23.4 & 64.3 & 74 & 89 & 166.6 & 169.5 & 227.5 & 236.4 & 258.7 & 255.4 & 261.3 \\
+      & 英国 & 134 & 81.5 & 70.9 & 57.5 & 40.3 & 41 & 38.1 & 42.6 & 39.8 & 84.7 & 85.5 & 105.6 & 105.9 & 101.4 \\
+      & 美国 & 69.7 & 54.4 & 48.7 & 43.6 & 51.6 & 57.7 & 66.3 & 64.1 & 66.1 & 104.1 & 108.7 & 133.5 & 126.4 & 121.4 \\
+      \multicolumn{2}{l}{\textbf{新兴市场经济体}} & \textbf{15.5} & \textbf{18.8} & \textbf{20.6} & \textbf{21.4} & \textbf{35.6} & \textbf{40.2} & \textbf{41.5} & \textbf{40.9} & \textbf{44.1} & \textbf{44.3} & \textbf{55.7} & \textbf{65.8} & \textbf{64.8} & \textbf{65.2} \\
+      & 中国 &  &  &  &  &  &  & 21.2 & 26.9 & 26.4 & 44.3 & 60.4 & 70.1 & 71.8 & 77.1 \\
+      & 其他 & 15.5 & 18.8 & 20.6 & 21.4 & 38.6 & 45.8 & 46.3 & 44.7 & 49 & 44 & 52 & 61.9 & 58.4 & 55.3 \\
+      \multicolumn{2}{l}{\textbf{低收入发展中国家}} & \textbf{} & \textbf{} & \textbf{} & \textbf{15.6} & \textbf{36.2} & \textbf{43.2} & \textbf{64.8} & \textbf{45.8} & \textbf{51.2} & \textbf{34.8} & \textbf{42.9} & \textbf{48.5} & \textbf{48.5} & \textbf{48.4} \\ \bottomrule
+    \end{tabular}%
+  }
+  \caption{全球公共债务（占GDP百分比，加权平均数）}
+  \label{tab:publicdebt}
+
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llllllllllllllll@{}}
+      \toprule
+      &  & 1950s & 1960s & 1968 & 1970s & 1980s & 1986 & 1990s & 2000s & 2004 & 2010s & 2019 & 2020 & 2021 & 2022 \\ \midrule
+      \multicolumn{2}{l}{\textbf{世界}} & \textbf{40.6} & \textbf{61.7} & \textbf{70} & \textbf{81.9} & \textbf{96.7} & \textbf{102.5} & \textbf{118.1} & \textbf{130.3} & \textbf{128.8} & \textbf{138.3} & \textbf{144} & \textbf{157.6} & \textbf{152.1} & \textbf{145.7} \\
+      \multicolumn{2}{l}{\textbf{发达经济体}} & \textbf{46} & \textbf{71.1} & \textbf{79.4} & \textbf{97.5} & \textbf{114.6} & \textbf{119.6} & \textbf{135.6} & \textbf{154.1} & \textbf{149.1} & \textbf{162.7} & \textbf{163.4} & \textbf{177} & \textbf{171.4} & \textbf{164.4} \\
+      & 欧洲地区 & 21 & 43.3 & 45.7 & 90.7 & 97 & 95.2 & 109.5 & 144.5 & 138.9 & 164.2 & 160.7 & 174.4 & 169.4 & 161.1 \\
+      & 日本 &  & 116.1 & 116.1 & 134.1 & 165.2 & 168.2 & 207.1 & 170.1 & 164 & 159.4 & 164.5 & 183.5 & 184.4 & 186.1 \\
+      & 英国 &  & 55.6 & 58.1 & 59.1 & 78.3 & 84.6 & 115 & 162.5 & 157.5 & 163.8 & 155.3 & 173.5 & 163.4 & 150.8 \\
+      & 美国 & 63.8 & 86 & 90 & 96.1 & 111.6 & 119.2 & 122.8 & 154.2 & 151.6 & 151.9 & 151.5 & 163.9 & 157 & 152.5 \\
+      \multicolumn{2}{l}{\textbf{新兴市场经济体}} & \textbf{12.6} & \textbf{14.3} & \textbf{17.2} & \textbf{18.1} & \textbf{29.9} & \textbf{32.4} & \textbf{45.7} & \textbf{60.7} & \textbf{58.6} & \textbf{104.2} & \textbf{121.2} & \textbf{135.4} & \textbf{130.5} & \textbf{126} \\
+      & 中国 &  &  &  &  & 71.3 & 73.4 & 86.6 & 110.9 & 116.1 & 167.1 & 186.4 & 198.7 & 193 & 195 \\
+      & 其他 & 12.6 & 14.3 & 17.2 & 18.1 & 27.1 & 26.7 & 39.1 & 46.4 & 42.6 & 66.6 & 71 & 79.2 & 73.4 & 68.9 \\
+      \multicolumn{2}{l}{\textbf{低收入发展中国家}} & \textbf{} & \textbf{4.1} & \textbf{4.6} & \textbf{4.7} & \textbf{7.4} & \textbf{8.3} & \textbf{8.8} & \textbf{16.1} & \textbf{14} & \textbf{27} & \textbf{34.5} & \textbf{36.9} & \textbf{38.9} & \textbf{39.3} \\ \bottomrule
+    \end{tabular}%
+  }
+  \caption{全球私人债务（占GDP百分比，加权平均数）}
+  \capsource{数据来源：国际货币基金组织全球债务监测报告, 2023 \\
+    \url{https://www.imf.org/-/media/Files/Conferences/2023/2023-09-2023-global-debt-monitor.ashx}\par
+    注意：表头年份列加`s'标志的是测算的十年平均值，例如1950s表示1950--1959年
+    的平
+    均债务水平。\\
+    中国私人债务数据包含\sfrac{1}{3} \textbf{地方政府融资平台债务}和其他\textbf{预算外政
+      府基金债务}。}
+  \label{tab:privatedebt}
+\end{table}

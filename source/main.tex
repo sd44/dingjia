@@ -1,0 +1,93 @@
+\special{pdf:encrypt userpw (meng) ownerpw (dingjia) length 128 perm 3900}  % 加
+%                                 % 密， texdoc xdvipdfmx
+
+% \documentclass[lwarp]{dingjia}
+\documentclass{dingjia}
+
+\addbibresource[location=local]{ref/refs.bib}
+
+
+\title{梦园随笔（草稿240422）}
+\subtitle{我的三观独白}
+\author{孙滨}
+\authornick{墨韩}
+\authorurl{http://github.com/sd44/dingjia}
+\authormail{sd44sd44@yeah.net}
+\date{2024年4月}
+
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\input{data/dedication}
+\input{data/preface}
+%% 目录
+
+%% 符号对照表
+% \input{data/denotation}
+
+%%% 正文部分
+\mainmatter
+
+\part{空间生产}
+
+\pagestyle{empty}
+\input{data/dingjiaphoto}
+\pagestyle{fancy}
+\input{data/chengzhongcun}
+% \input{data/rebelcites}
+% \input{data/kongjian}
+
+\part{人文}
+\input{data/shengming}
+% \input{data/houxiandai}
+\input{data/gongzuori}
+\input{data/tips}
+
+\part{国际政经}
+\input{data/kaiensi}
+\input{data/neoliber}
+\input{data/assange}
+\input{data/soviet}
+
+\part{关于中国}
+\input{data/aboutchina}
+\input{data/historychina}
+\input{data/historychina2}
+\input{data/historychina3}
+
+
+% %% 参考文献
+% \clearpage
+% \appendix
+% \phantomsection
+% \addcontentsline{toc}{part}{\appendixname}
+
+% \input{data/gerenshehui}
+% \input{data/nicai}
+
+\backmatter
+
+%%% 其它部分
+%% 插图索引
+% \listoffigures
+%% 表格索引
+\listoftables
+%% 公式索引
+%% \listofequations
+\printbibliography[heading=bibispart, title=参考文献]
+
+%% \clearpage
+%% \phantomsection
+%% \todototoc
+%% \listoftodos
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
