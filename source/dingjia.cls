@@ -129,7 +129,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 
 % 插图所需的宏包
-\RequirePackage[table]{xcolor}
+\RequirePackage[table, dvipsnames]{xcolor}
 \RequirePackage{graphicx}
 \graphicspath{{figures/}}
 
@@ -241,6 +241,9 @@ footnoteleadingratio = 1.6]{zhlineskip}
 % \renewcommand{\contentsname}{\hspace*{\fill}\bfseries\Large
 % 目录 \hspace*{\fill}}   % 不使用tocloft宏包时也适用的命令。
 
+\renewcommand{\listfigurename}{插图索引}
+\renewcommand{\listtablename}{表格索引}
+
 % 设置目录中各级缩进
 % \setlength{\cftsecindent}{2.5em}
 \setlength{\cftsubsecindent}{4em}
@@ -326,12 +329,15 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 
 \RequirePackage{xargs}
-\RequirePackage[colorinlistoftodos,prependcaption,textsize=small, disable]{todonotes}
+\RequirePackage[colorinlistoftodos,prependcaption,textsize=small% , disable
+]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
 \newcommandx{\improve}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
 \newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+\renewcommand{\@todonotes@todolistname}{Todo 列表}
 
 % 自定义我的丁家庄图片环境，包含纵向两个图片。注意这一自定义命令限制较多，只适合
 % 此项目环境，A4纸，并且图片宽高比要接近3:2以防止溢出。使用方法

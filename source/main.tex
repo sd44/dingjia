@@ -1,5 +1,5 @@
-\special{pdf:encrypt userpw (meng) ownerpw (dingjia) length 128 perm 3900}  % 加
-%                                 % 密， texdoc xdvipdfmx
+% \special{pdf:encrypt userpw (meng) ownerpw (dingjia) length 128 perm 3900}  % 加
+% %                                 % 密， texdoc xdvipdfmx
 
 % \documentclass[lwarp]{dingjia}
 \documentclass{dingjia}
@@ -7,7 +7,7 @@
 \addbibresource[location=local]{ref/refs.bib}
 
 
-\title{梦园随笔（草稿240422）}
+\title{梦园随笔（草稿240529）}
 \subtitle{我的三观独白}
 \author{孙滨}
 \authornick{墨韩}
@@ -20,11 +20,18 @@
 
 \frontmatter
 \maketitle
+
+%% 目录
 \tableofcontents
 
 \input{data/dedication}
 \input{data/preface}
-%% 目录
+
+\cleardoublepage
+\phantomsection
+\todototoc
+\listoftodos[TODO列表（欢迎读者参与）]
+
 
 %% 符号对照表
 % \input{data/denotation}
@@ -59,6 +66,8 @@
 \input{data/historychina2}
 \input{data/historychina3}
 
+% \input{data/gerenshehui}
+% \input{data/nicai}
 
 % %% 参考文献
 % \clearpage
@@ -66,16 +75,14 @@
 % \phantomsection
 % \addcontentsline{toc}{part}{\appendixname}
 
-% \input{data/gerenshehui}
-% \input{data/nicai}
 
 \backmatter
 
 %%% 其它部分
 %% 插图索引
-\listoffigures
+\listoffigures\newpage
 %% 表格索引
-\listoftables
+\listoftables\newpage
 %% 公式索引
 %% \listofequations
 \printbibliography[heading=bibispart, title=参考文献]
