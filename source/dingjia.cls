@@ -402,6 +402,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 }
 
 \RequirePackage{cleveref}
+\newcommand{\ccref}[1]{\cref{#1} \nameref{#1}}
 \crefname{equation}{公式}{公式}
 \crefname{table}{表}{表}
 \crefname{figure}{图}{图}
