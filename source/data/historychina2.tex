@@ -1043,21 +1043,48 @@
 
 第二，刻意滥用概念“帕累托改进”。“帕累托改进是指在不减少一方的福利时，通过
 改变现有的资源配置而提高另一方的福利。”就历史事实和经验来说，笔者敢于断言双
-轨制的实行无论如何也不会是帕累托改进，价格改革与强通货膨胀的强相关是无可辩驳
+轨制无论如何也不会是帕累托改进，它与强通货膨胀的强相关是无可辩驳
 的事实。
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\linewidth]{tongpeng30.jpg}
-  \caption[1980--2012年CPI通膨率]{\label{fig:tongpeng30}注：图中CPI涨幅为本年相较
-    上一年的涨幅。 }
-  \capsource{\url{http://intl.ce.cn/specials/zxxx/201308/09/t20130809_24648757.shtml}}
+
+  \begin{tikzpicture}
+    \begin{axis}[
+      % width = \textwidth,
+      xmin=1975, xmax=2025,
+      width = 16cm,
+      height = 6.5cm,
+      % xlabel={年份},
+      % ylabel={较上年增长率\%},
+      minor x tick num=4,
+      minor y tick num=4,
+      ytick distance = 5,
+      grid=major,
+      legend entries={GDP, CPI},
+      xticklabel style={rotate=60,
+        /pgf/number format/1000 sep={},
+      },
+      % /pgfplots/xlabel near ticks/.style={
+      % /pgfplots/every axis x label/.style={
+      % at={(ticklabel cs:0.5)},anchor=near ticklabel,
+      % },
+      % },
+      ]
+      \addplot table {gdp.dat};
+      \addplot table {cpi.dat};
+    \end{axis}
+  \end{tikzpicture}
+
+  \caption{\label{fig:tongpeng30}1977--2023 CPI GDP较上年增长率\ \% }
+  \capsource{数据来源：国家统计局}
+
 \end{figure}
 
 截止到1988年价格闯关前，通货膨胀所收取的高额铸币暗税；1985--1987一些社会事件；
 粮食合同定购农民积极性持续下滑，以至于发展到1990年国家要实行强制性更强的“国
 家定购”才能完成中央收购；尽快双轨并轨为市场一轨，实行激进“物价、价格闯
-关”的主因——“双轨制价格造成的腐败和经济秩序混乱”，也被他们无视掉
+关”的主因——“双轨制价格造成的腐败和经济秩序混乱”，也被这些经济学家们无视掉
 了；1988年人民恐慌挤兑抢购的事实何在？只是因为“激进的”价格闯关来临，就没有
 之前“温和的”价格双轨制所造成的原因吗？张维迎、张曙光等对双轨制的辩护中，他
 们认为计划轨的失败本就属于双轨制改革的目的，那么主要在计划轨上生活的民众怎么
