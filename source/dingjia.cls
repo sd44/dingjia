@@ -104,7 +104,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
   % pdfkeywords = {丁家庄, 城中村, 新型城镇化, 社会空间, 社会排斥}
 }
 
-\usepackage[type={CC}, modifier={by-nc}, version={4.0}, lang = {chinese-utf8}]{doclicense}
+\usepackage[type={CC}, modifier={by-nc-sa}, version={4.0}, lang = {chinese-utf8}]{doclicense}
 
 % \ifding@lwarp
 %   \begin{warpHTML}
