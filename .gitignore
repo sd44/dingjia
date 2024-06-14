@@ -20,6 +20,7 @@ figures/dingjia-orig/*
 *.xdv
 *.rel
 *.lof
+*.lot
 main.pdf
 sample_project.css
 lwarp*
