@@ -489,7 +489,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
     \Large
     \begin{tabular}{lc}
       作\quad 者： &  \@author \\
-      昵\quad 称： & \@authornick \\
+      % 昵\quad 称： & \@authornick \\
       日\quad 期： & \@date \\
       网\quad 站： & \@authorurl \\
       邮\quad 箱: & \@authormail
