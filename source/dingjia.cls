@@ -480,8 +480,10 @@ footnoteleadingratio = 1.6]{zhlineskip}
   \centering
   \vspace*{0.6\drop}
   {\Huge \bfseries \@title}\\[2\baselineskip]
-  {\huge \bfseries \itshape \@subtitle}\par
-  \vspace*{1\drop}
+  {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
+
+  {\large \bfseries 征求意见稿 20240615}
+  \vspace*{0.8\drop}
   \begin{table}[!h]
     \centering
     \Large
@@ -498,8 +500,12 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
   \endgroup
   \vfill\null
-  \null
   \clearpage
+  \begingroup
+  \thispagestyle{empty}
+  \null
+  \newpage
+  \endgroup
 }
 
 
