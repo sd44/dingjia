@@ -165,7 +165,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \AtBeginEnvironment{quotation}{\itshape }
 
 
-\RequirePackage{ geometry}
+\RequirePackage{geometry}
 \geometry{%
   a4paper,
   heightrounded,
@@ -298,7 +298,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 \setlist[description]{style=standard, font=\large\sffamily\bfseries}
 
-% \setlist[1]{labelindent=\parindent} % Only the level 1
+\setlist[2]{labelindent=\parindent} % Only the level 2
 
 \RequirePackage{tikz, pgfplots}
 \tikzset{every picture/.style={/utils/exec={\footnotesize}}}
