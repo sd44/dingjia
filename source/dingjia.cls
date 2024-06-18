@@ -294,11 +294,11 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 \setlist{leftmargin= 0ex, itemindent = 1.7\parindent, listparindent =
   \parindent, labelindent=\parindent, labelwidth=2em, parsep = 0ex,
-  partopsep = 0ex, itemsep = 0.5em }
+  partopsep = 0ex, itemsep = 0.5em, align=right }
+
+\setlist[2]{align=right, itemindent=2\parindent} % Only the level 2
 
 \setlist[description]{style=standard, font=\large\sffamily\bfseries}
-
-\setlist[2]{labelindent=\parindent} % Only the level 2
 
 \RequirePackage{tikz, pgfplots}
 \tikzset{every picture/.style={/utils/exec={\footnotesize}}}
