@@ -51,6 +51,10 @@
   % mathjax,                    % Use MathJax to display math.
   ]{lwarp}
   \boolfalse{FileSectionNames}  % If false, numbers the files.
+\else
+  \newcommand*{\StartDefiningTabulars}{}
+  \newcommand*{\StopDefiningTabulars}{}
+  \newcommand*{\mrowcell}{}
 \fi
 
 % iftex有｝bug，注销掉。
@@ -107,7 +111,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 \PassOptionsToPackage{type={CC}, modifier={by-nc-sa}, ve
 rsion={4.0}, lang = {chinese-utf8}}{doclicense}
-
+\RequirePackage{doclicense}
 
 % \ifding@lwarp
 %   \begin{warpHTML}
@@ -475,41 +479,42 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 \def\@authormail{\@latex@warning{No \noexpand\authomail given}}
 
 \newlength{\drop}% for my convenience
-% \def\maketitle{%
-%   \thispagestyle{empty}
-%   \null
-%   \begingroup
-%   \drop = 0.2\textheight
-%   \centering
-%   \vspace*{0.6\drop}
-%   {\Huge \bfseries \@title}\\[2\baselineskip]
-%   {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
+\def\maketitle{%
+  \thispagestyle{empty}
+  \null
+  \begingroup
+  \drop = 0.2\textheight
+  \centering
+  \vspace*{0.6\drop}
+  {\Huge \bfseries \@title}\\[2\baselineskip]
+  {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
 
-%   {\large \bfseries 征求意见稿 20240615}
-%   \vspace*{0.8\drop}
-%   \begin{table}[!h]
-%     \centering
-%     \Large
-%     % \begin{tabular}{lc}
-%     %   作\quad 者： &  \@author \\
-%     %   % 昵\quad 称： & \@authornick \\
-%     %   日\quad 期： & \@date \\
-%     %   网\quad 站： & \@authorurl \\
-%     %   邮\quad 箱: & \@authormail
-%     % \end{tabular}
-%   \end{table}
-  % \vspace*{0.5\drop}
-  % \doclicenseThis
+  {\large \bfseries 征求意见稿 20240615}
+  \vspace*{0.8\drop}
+  \begin{table}[!h]
+    \centering
+    \Large
+    \begin{tabular}{lc}
+      作\quad 者： &  \@author \\
+      % 昵\quad 称： & \@authornick \\
+      日\quad 期： & \@date \\
+      网\quad 站： & \@authorurl \\
+      邮\quad 箱: & \@authormail
+    \end{tabular}
+  \end{table}
+  \vspace*{0.5\drop}
+  \doclicenseThis
 
-  % \endgroup
-%   \vfill\null
-%   \clearpage
-%   \begingroup
-%   \thispagestyle{empty}
-%   \null
-%   \newpage
-%   \endgroup
-% }
+  \endgroup
+  \vfill\null
+  \clearpage
+
+  \begingroup
+  \thispagestyle{empty}
+  \null
+  \newpage
+  \endgroup
+}
 
 
 \ifding@lwarp
