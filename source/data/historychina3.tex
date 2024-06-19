@@ -449,7 +449,8 @@
 
 \section{分税制}
 
-\improve[inline]{2013年至今实行营改增，\url{http://tax.hexun.com/2013-09-02/157625914.html}}
+\improve[inline]{2013年至今实行营改增，
+  \href{http://tax.hexun.com/2013-09-02/157625914.html}{和讯网}}
 
 \subsection{分税制历史资料简单汇总}
 
@@ -673,8 +674,10 @@
 % \usepackage{booktabs}
 % \usepackage{multirow}
 % \usepackage{graphicx}
-\begin{table}[]
+\begin{table}[htbp]
 \centering
+\StartDefiningTabulars
+\begin{minipage}{\textwidth}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}cccccccccccc@{}}
 \toprule
@@ -684,9 +687,8 @@
   \multicolumn{2}{c}{地方财政收入} &
   \multicolumn{4}{c}{中央转移支付（亿元）} &
                                      \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}转移后\\ 中央占\\ 比全国\end{tabular}} \\
-
   \cmidrule{2-3} \cmidrule{4-5} \cmidrule{6-7} \cmidrule{8-11}
- &
+ \mrowcell &
   财政收入 &
   \begin{tabular}[c]{@{}c@{}}土地出\\ 让收入\\ （亿元）\end{tabular} &
   \begin{tabular}[c]{@{}c@{}}总额\\ （亿元）\end{tabular} &
@@ -698,7 +700,6 @@
   \begin{tabular}[c]{@{}c@{}}税收\\ 返还\end{tabular} &
   合计 &
   \\ \midrule
-
 1993 & 4349  & 557.80  & 958   & 22.02\% & 3391  & 16.45\% &      &      &      &       &         \\
 1994 & 5218  & 639.00  & 2907  & 55.70\% & 2312  & 27.64\% & 99   & 361  & 1799 & 2259  & 12.41\% \\
 1995 & 6242  & 387.70  & 3257  & 52.17\% & 2986  & 12.99\% & 133  & 375  & 1867 & 2375  & 14.12\% \\
@@ -714,8 +715,10 @@
 2005 & 31649 & 5883.82 & 16549 & 52.29\% & 15101 & 38.96\% & 3812 & 3529 & 4143 & 11484 & 16.00\% \\ \bottomrule
 \end{tabular}%
 }
+\end{minipage}
+\StopDefiningTabulars
 \caption{1993--2005中央与地方财政收入及转移支付规模}
-\capsource{来源：周飞舟、谭飞智《当代中国的中央地方关系}
+\capsource{来源：周飞舟、谭飞智《当代中国的中央地方关系》}
 \label{tab:zhuanyi}
 \end{table}
 

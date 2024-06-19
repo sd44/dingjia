@@ -105,7 +105,9 @@ footnoteleadingratio = 1.6]{zhlineskip}
   % pdfkeywords = {丁家庄, 城中村, 新型城镇化, 社会空间, 社会排斥}
 }
 
-\usepackage[type={CC}, modifier={by-nc-sa}, version={4.0}, lang = {chinese-utf8}]{doclicense}
+\PassOptionsToPackage{type={CC}, modifier={by-nc-sa}, ve
+rsion={4.0}, lang = {chinese-utf8}}{doclicense}
+
 
 % \ifding@lwarp
 %   \begin{warpHTML}
@@ -217,7 +219,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 \RequirePackage{bookmark}
 \RequirePackage{booktabs}
-\RequirePackage{lscape}
+% \RequirePackage{lscape}
 \RequirePackage{float}
 
 % 双栏排版
@@ -473,41 +475,41 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \def\@authormail{\@latex@warning{No \noexpand\authomail given}}
 
 \newlength{\drop}% for my convenience
-\def\maketitle{%
-  \thispagestyle{empty}
-  \null
-  \begingroup
-  \drop = 0.2\textheight
-  \centering
-  \vspace*{0.6\drop}
-  {\Huge \bfseries \@title}\\[2\baselineskip]
-  {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
+% \def\maketitle{%
+%   \thispagestyle{empty}
+%   \null
+%   \begingroup
+%   \drop = 0.2\textheight
+%   \centering
+%   \vspace*{0.6\drop}
+%   {\Huge \bfseries \@title}\\[2\baselineskip]
+%   {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
 
-  {\large \bfseries 征求意见稿 20240615}
-  \vspace*{0.8\drop}
-  \begin{table}[!h]
-    \centering
-    \Large
-    \begin{tabular}{lc}
-      作\quad 者： &  \@author \\
-      % 昵\quad 称： & \@authornick \\
-      日\quad 期： & \@date \\
-      网\quad 站： & \@authorurl \\
-      邮\quad 箱: & \@authormail
-    \end{tabular}
-  \end{table}
-  \vspace*{0.5\drop}
-  \doclicenseThis
+%   {\large \bfseries 征求意见稿 20240615}
+%   \vspace*{0.8\drop}
+%   \begin{table}[!h]
+%     \centering
+%     \Large
+%     % \begin{tabular}{lc}
+%     %   作\quad 者： &  \@author \\
+%     %   % 昵\quad 称： & \@authornick \\
+%     %   日\quad 期： & \@date \\
+%     %   网\quad 站： & \@authorurl \\
+%     %   邮\quad 箱: & \@authormail
+%     % \end{tabular}
+%   \end{table}
+  % \vspace*{0.5\drop}
+  % \doclicenseThis
 
-  \endgroup
-  \vfill\null
-  \clearpage
-  \begingroup
-  \thispagestyle{empty}
-  \null
-  \newpage
-  \endgroup
-}
+  % \endgroup
+%   \vfill\null
+%   \clearpage
+%   \begingroup
+%   \thispagestyle{empty}
+%   \null
+%   \newpage
+%   \endgroup
+% }
 
 
 \ifding@lwarp
@@ -520,19 +522,16 @@ footnoteleadingratio = 1.6]{zhlineskip}
   \setcounter{SideTOCDepth}{1}    % Include subsections in the side\TOC
   % \setcounter{SideTOCDepth}{-6} % 让sidetoc不可见。
 
-  \HTMLTitle{个人社会学视角下的世界与中国——一个平民的独白}       % Overrides \title for the web page.
+  \HTMLTitle{梦园呓语——我的三观独白}       % Overrides \title for the web page.
   \HTMLAuthor{孙滨（蛋疼的蛋蛋）}        % Sets the HTML meta author tag.
   \HTMLLanguage{UTF-8}            % Sets the HTML meta language.
   \HTMLDescription{A description.}% Sets the HTML meta description.
-  % \HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
-  % \HTMLPageTop{\LinkHome}
-  % \HTMLPageBottom{欢迎转载，转载请注明本链接地址，最好再通知我一下。}
 
   \HTMLFirstPageTop{孙滨（蛋疼的蛋蛋）}
   % \HTMLPageTop{回到\LinkHome}
   \HTMLPageBottom{回到\LinkHome \qquad%
     \href{mailto:sd44sd44@yeah.net}{sd44sd44@yeah.net} \qquad%
-    \url{http://sd44.gitee.io}\\ 欢迎转载，转载请注明本链接地址，最好再通知我一下，%
+    \url{http://sd44.github.io}\\ 欢迎转载，转载请注明本链接地址，最好再通知我一下，%
     让我高兴高兴，哈哈。}
 
   \CSSFilename{lwarp_sagebrush.css}

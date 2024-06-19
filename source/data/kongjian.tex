@@ -294,11 +294,12 @@
 % \usepackage{graphicx}
 \begin{table}[]
 \centering
+\StartDefiningTabulars
 \resizebox{0.8\textwidth}{!}{%
 \begin{tabular}{@{}llllllllll@{}}
 \toprule
 \multirow{2}{*}{年份} & \multicolumn{4}{l}{出让土地面积比重} &  & \multicolumn{4}{l}{出让收入比重} \\ \cmidrule(l){2-5}  \cmidrule(l){6-9}
-                    & 协议    & 招标    & 拍卖    & 挂牌   &  & 协议    & 招标   & 拍卖   & 挂牌   \\ \midrule
+\mrowcell           & 协议    & 招标    & 拍卖    & 挂牌   &  & 协议    & 招标   & 拍卖   & 挂牌   \\ \midrule
 2002                & 0.84  & 0.03  & 0.10  & 0.02 &  & -  & - & - & - \\
 2003                & 0.72  & 0.03  & 0.05  & 0.19 &  & 0.43  & 0.12 & 0.16 & 0.29 \\
 2004                & 0.71  & 0.02  & 0.05  & 0.21 &  & 0.45  & 0.08 & 0.15 & 0.33 \\
@@ -308,6 +309,7 @@
 2008                & 0.16  & 0.02  & 0.06  & 0.76 &  & 0.07  & 0.05 & 0.13 & 0.74 \\ \bottomrule
 \end{tabular}%
 }
+\StopDefiningTabulars
 \caption{不同土地出让方式出让土地面积、收入的构成}
 \label{tab:zhaopaigua}
 \capsource{来源：李郇、洪国志、黄亮雄《中国土地财政增长之谜》}
@@ -569,7 +571,7 @@
   \caption{\label{fig:bf08}2008年以前工业增长、土地财政与地区经济增长（可持
     续） }
 
-  \includegraphics[width=0.9\textwidth]{figures/after08.pdf}
+  \includegraphics[width=0.9\textwidth]{figures/after08}
   \caption{\label{fig:af08}2008年后软预算约束与地区经济增长（不可持续） }
   \capsource{范剑勇\qquad《四万亿如何改变了中国经济增长动力》}
 \end{figure}

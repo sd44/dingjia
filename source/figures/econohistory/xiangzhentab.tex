@@ -1,5 +1,6 @@
 \begin{table}[ht]
   \centering
+  \StartDefiningTabulars
   \footnotesize
   \resizebox{\linewidth}{!}{%
     \begin{tabularx}{\textwidth}{c S[table-format=4] S[table-format=3.2, round-mode=places, round-precision=1,]
@@ -7,7 +8,7 @@
     \toprule \multirow[c]{2}{*}{\textbf{年份}} & \multicolumn{5}{c}{\textbf{企业
         单位数}} & \multicolumn{4}{c}{\textbf{从业人员}} \\
     \cmidrule(lr{0.7em}){2-6} \cmidrule(lr{0.7em}){7-10}
-    &  \textbf{总量} &
+   \mrowcell &  \textbf{总量} &
     \textbf{增加率}\% & \textbf{集体企业} & \textbf{私营企业} & \textbf{个体企
       业} & \textbf{总数} & \textbf{第一产业} & \textbf{第二产业} & \textbf{第三
       产业} \\
@@ -32,7 +33,7 @@
       \toprule
       \multicolumn{1}{c}{\multirow{2}{*}{\textbf{年份}}} & \multicolumn{3}{c}{\textbf{产值}} & \multicolumn{3}{c}{\textbf{出口}}  \\
       \cmidrule(lr{1em}){2-4} \cmidrule(lr{1em}){5-7}
-      & \textbf{增加值} & \textbf{GDP} & \textbf{增加值/GDP} \% &
+      \mrowcell & \textbf{增加值} & \textbf{GDP} & \textbf{增加值/GDP} \% &
       \textbf{乡镇企业 } & \textbf{全国} & \textbf{乡镇/全国} \%
       \\ \midrule
       1978 & 208.3224   & 3678.7   & 5.66   &          & 167.6   &       \\
@@ -51,4 +52,6 @@
   \caption{\label{tab:xiangzhen}部分乡镇企业数据}
   \capsource{资料来源：国家统计局《中国乡镇资料》（1978--2002年）、《中国统计
     摘要--2018》}
+
+  \StopDefiningTabulars
 \end{table}
