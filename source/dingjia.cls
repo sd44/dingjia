@@ -102,7 +102,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
   bookmarksnumbered = true,
   bookmarksdepth = section,
   bookmarksopen = true,
-  pdftitle = {梦园呓语——我的三观独白(征求合作和意见稿20240616)},
+  pdftitle = {梦园呓语——我的三观独白(征求合作和意见稿20240621)},
   pdfcreator = {sd44sd44@yeah.net},
   pdfauthor = {孙滨},
   % pdfsubject = {丁家庄城中村},
@@ -489,7 +489,7 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
   {\Huge \bfseries \@title}\\[2\baselineskip]
   {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
 
-  {\large \bfseries 征求意见稿 20240615}
+  {\large \bfseries 征求意见稿 20240621}
   \vspace*{0.8\drop}
   \begin{table}[!h]
     \centering
