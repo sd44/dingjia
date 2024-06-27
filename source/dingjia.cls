@@ -48,7 +48,7 @@
   % IndexLanguage=english,      % Language for xindy index, glossary.
   latexmk,                    % Use latexmk to compile.
   % OSWindows,                  % Force Windows. (Usually automatic.)
-  % mathjax,                    % Use MathJax to display math.
+  mathjax,                    % Use MathJax to display math.
   ]{lwarp}
   \boolfalse{FileSectionNames}  % If false, numbers the files.
 \else
@@ -102,7 +102,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
   bookmarksnumbered = true,
   bookmarksdepth = section,
   bookmarksopen = true,
-  pdftitle = {梦园呓语——我的三观独白(征求合作和意见稿20240625)},
+  pdftitle = {梦园呓语——我的三观独白(征求合作和意见稿20240627)},
   pdfcreator = {sd44sd44@yeah.net},
   pdfauthor = {孙滨},
   % pdfsubject = {丁家庄城中村},
@@ -298,13 +298,14 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 %   \parindent, %labelindent = \parindent,
 %   parsep = 0ex, partopsep = 0ex, itemsep = 0.5em }
 
-\setlist{leftmargin= 0ex, itemindent = 1.7\parindent, listparindent =
+\setlist[enumerate]{leftmargin= 0ex, itemindent = 1.7\parindent, listparindent =
   \parindent, labelindent=\parindent, labelwidth=2em, parsep = 0ex,
   partopsep = 0ex, itemsep = 0.5em, align=right }
 
 \setlist[2]{align=right, itemindent=2\parindent} % Only the level 2
 
-\setlist[description]{style=standard, font=\large\sffamily\bfseries}
+% \setlist[description]{style=nextline, font=\sffamily\bfseries}
+\setlist[description]{font=\sffamily\bfseries}
 
 \RequirePackage{tikz, pgfplots}
 \tikzset{every picture/.style={/utils/exec={\footnotesize}}}
@@ -312,7 +313,8 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 \usetikzlibrary{arrows,arrows.meta, datavisualization}
 
 \pgfplotsset{
-  compat=newest,
+  % compat=newest,
+  compat=1.18,
   compat/show suggested version=false,
   tick label style={font=\tiny},
   label style={font=\small},
@@ -336,8 +338,7 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 
 
 \RequirePackage{xargs}
-\RequirePackage[colorinlistoftodos,prependcaption,textsize=small% , disable
-]{todonotes}
+\RequirePackage[colorinlistoftodos,prependcaption,textsize=small , disable]{todonotes}
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
@@ -465,12 +466,13 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 
 
 
+\newlength{\drop}% for my convenience
 
 \def\subtitle#1{\gdef\@subtitle{#1}}
 \def\@subtitle{\@latex@warning{No \noexpand\subtitle given}}
 
-\def\authornick#1{\gdef\@authornick{#1}}
-\def\@authornick{\@latex@warning{No \noexpand\authornick given}}
+% \def\authornick#1{\gdef\@authornick{#1}}
+% \def\@authornick{\@latex@warning{No \noexpand\authornick given}}
 
 \def\authorurl#1{\gdef\@authorurl{\url{#1}}}
 \def\@authorurl{\@latex@warning{No \noexpand\authorurl given}}
@@ -478,7 +480,6 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 \def\authormail#1{\gdef\@authormail{\href{mailto:#1}{#1}}}
 \def\@authormail{\@latex@warning{No \noexpand\authomail given}}
 
-\newlength{\drop}% for my convenience
 \def\maketitle{%
   \thispagestyle{empty}
   \null
@@ -489,39 +490,39 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
   {\Huge \bfseries \@title}\\[2\baselineskip]
   {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
 
-  {\large \bfseries 征求意见稿 20240625}
+  {\large \bfseries 征求意见稿 20240627}
   \vspace*{0.8\drop}
   \begin{table}[!h]
     \centering
     \Large
-    \begin{tabular}{lc}
-      作\quad 者： &  \@author \\
-      % 昵\quad 称： & \@authornick \\
-      日\quad 期： & \@date \\
-      网\quad 站： & \@authorurl \\
-      邮\quad 箱: & \@authormail
-    \end{tabular}
-  \end{table}
-  \vspace*{0.5\drop}
-  \doclicenseThis
+  \begin{tabular}{cc}
+    作\quad 者： &  \@author \\
+    % 昵\quad 称： & \@authornick \\
+    日\quad 期： & \@date \\
+    网\quad 站： & \@authorurl \\
+    邮\quad 箱: & \@authormail
+  \end{tabular}
+\end{table}
+\vspace*{0.5\drop}
+\doclicenseThis
 
-  \endgroup
-  \vfill\null
-  \clearpage
+\endgroup
+\vfill\null
+\clearpage
 
-  \begingroup
-  \thispagestyle{empty}
-  \null
-  \newpage
-  \endgroup
+\begingroup
+\thispagestyle{empty}
+\null
+\newpage
+\endgroup
 }
 
 
 \ifding@lwarp
   % --- LATEX AND HTML CUSTOMIZATION ---
-  \setcounter{tocdepth}{2}        % Include subsections in the \TOC.
+  \setcounter{tocdepth}{1}        % Include subsections in the \TOC.
   \setcounter{secnumdepth}{2}     % Number down to subsections.
-  \setcounter{FileDepth}{1}       % Split \HTML\ files at sections
+  \setcounter{FileDepth}{0}       % Split \HTML\ files at chapters
   % \setcounter{FileDepth}{-5}       % one html page
   \booltrue{CombineHigherDepths}  % Combine parts/chapters/sections
   \setcounter{SideTOCDepth}{1}    % Include subsections in the side\TOC

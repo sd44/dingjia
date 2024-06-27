@@ -5,6 +5,7 @@
 
 \begin{table}[p]
 \centering
+\StartDefiningTabulars
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}cccccccccc@{}}
 \toprule
@@ -12,7 +13,7 @@
   \multicolumn{2}{c}{GDP} &
   \multicolumn{4}{c}{土地出让收入} &
   \multicolumn{3}{c}{财政收入} \\ \cmidrule(lr{0.5em}){2-3} \cmidrule(lr{0.5em}){4-7}\cmidrule(lr{0.5em}){8-10}
- &
+\mrowcell &
   当年价格 &
   \begin{tabular}[c]{@{}c@{}}较上年\\ 增长\end{tabular} &
   收入 &
@@ -58,6 +59,7 @@
 2021 & 1143670 & 12.57\% & 87051 & 3.46\%    & 7.61\% & 78.36\% & 202555 & 91470 & 111084 \\ \bottomrule
 \end{tabular}%
 }
+\StopDefiningTabulars
 \caption{1988--2021财政及土地出让收入（单位：亿元）}
 \label{tab:19882021}
 \capsource{财政收入中不包括国内外债务收入。\par 土地出让收入数据，1988-1998来源于张清勇，1999-2017来源于《国
