@@ -480,24 +480,27 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 \def\authormail#1{\gdef\@authormail{\href{mailto:#1}{#1}}}
 \def\@authormail{\@latex@warning{No \noexpand\authomail given}}
 
-\def\maketitle{%
-  \thispagestyle{empty}
+\ifding@lwarp
   \null
-  \begingroup
-  \drop = 0.2\textheight
-  \centering
-  \vspace*{0.6\drop}
-  {\Huge \bfseries \@title}\\[2\baselineskip]
-  {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
-
-  {\large \bfseries 征求意见稿 20240627}
-  \vspace*{0.8\drop}
-  \begin{table}[!h]
+\else
+  \def\maketitle{%
+    \thispagestyle{empty}
+    \null
+    \begingroup
+    \drop = 0.2\textheight
     \centering
-    \Large
-  \begin{tabular}{cc}
-    作\quad 者： &  \@author \\
-    % 昵\quad 称： & \@authornick \\
+    \vspace*{0.6\drop}
+    {\Huge \bfseries \@title}\\[2\baselineskip]
+    {\huge \bfseries \itshape \@subtitle}\\[3\baselineskip]
+
+    {\large \bfseries 征求意见稿 20240627}
+    \vspace*{0.8\drop}
+    \begin{table}[!h]
+      \centering
+      \Large
+      \begin{tabular}{cc}
+        作\quad 者： &  \@author \\
+        % 昵\quad 称： & \@authornick \\
     日\quad 期： & \@date \\
     网\quad 站： & \@authorurl \\
     邮\quad 箱: & \@authormail
