@@ -501,9 +501,9 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
       \begin{tabular}{cc}
         作\quad 者： &  \@author \\
         % 昵\quad 称： & \@authornick \\
-    日\quad 期： & \@date \\
-    网\quad 站： & \@authorurl \\
-    邮\quad 箱: & \@authormail
+        日\quad 期： & \@date \\
+        网\quad 站： & \@authorurl \\
+        邮\quad 箱: & \@authormail
   \end{tabular}
 \end{table}
 \vspace*{0.5\drop}
@@ -519,6 +519,7 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
 \newpage
 \endgroup
 }
+\fi
 
 
 \ifding@lwarp
