@@ -408,9 +408,8 @@ rsion={4.0}, lang = {chinese-utf8}}{doclicense}
     \chapter{#1}%
   \fi
 }
-
 \RequirePackage{cleveref}
-\newcommand{\ccref}[1]{\cref{#1} \nameref{#1}}
+\newcommand{\ccref}[1]{\cref{#1}~``\nameref{#1}}
 \crefname{equation}{公式}{公式}
 \crefname{table}{表}{表}
 \crefname{figure}{图}{图}
